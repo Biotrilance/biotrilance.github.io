@@ -1,0 +1,13 @@
+body { font-family: 'Patrick Hand', cursive; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffe0b2, #ffccbc); color: #333; line-height: 1.6; font-size: 18px; }
+header { background: #ff7043; padding: 40px 20px; text-align: center; color: white; }
+nav { background: #00695c; padding: 10px; text-align: center; }
+nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+footer { background: #004d40; color: white; text-align: center; padding: 20px; }
+.button { display: inline-block; padding: 15px 30px; background: #fff176; color: #333; text-decoration: none; border-radius: 50px; font-size: 1.2em; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin: 8px 4px; }
+.button:hover { background: #ffb74d; }
+img { max-width: 100%; border-radius: 15px; margin: 20px 0; }
+.highlight-card { background: #f9f9f9; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 2px dashed #009688; }
+.highlight-card h4 { margin-top: 0; color: #e65100; }
+.product-subcard { background: #fff; padding: 15px; border-radius: 10px; margin: 15px 0; border: 1px solid #ddd; }
+h1, h2, h3, h4 { font-family: 'Patrick Hand', cursive; }
