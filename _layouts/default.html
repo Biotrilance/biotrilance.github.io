@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Biotrilance</title>
+    
+    <!-- Google Font: Patrick Hand (handwritten style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+    <!-- Site header -->
+    {% include header.html %}
+    
+    <!-- Navigation menu -->
+    {% include nav.html %}
+    
+    <!-- Main content area -->
+    <main style="min-height: 80vh;">
+        {{ content }}
+    </main>
+    
+    <!-- Site footer -->
+    {% include footer.html %}
+</body>
+</html>
