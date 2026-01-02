@@ -1,37 +1,71 @@
-/* --- BIOTRILANCE: SCALE UP ONLY --- */
+/* --- BIOTRILANCE: COLOR RESTORATION + BIG FONT --- */
 
-/* 1. Force the root size to be large (Apex Pharma level) */
+/* 1. THE FONT SIZE BOOST */
 html {
-  font-size: 24px !important;
+  font-size: 22px !important; 
 }
 
-/* 2. Target every text element without changing colors or layout */
-body, p, li, span, div, section, a {
-  font-size: 1rem !important; /* This locks everything to the 24px base */
-  line-height: 1.6 !important;
-  /* Keeping standard clean font */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Matching your playful vibe */
+  background-color: #fdf5e6; /* Soft cream background */
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-/* 3. Keep Headings proportionally larger but in your Blue */
+/* 2. RESTORING THE ORANGE HEADER PANEL */
+header, .site-header, div[style*="background-color: orange"] {
+  background-color: #ff7f50 !important; /* Your specific Bright Orange */
+  color: white !important;
+  padding: 40px 20px !important;
+  text-align: center;
+}
+
+/* 3. RESTORING THE TEAL NAVIGATION BAR */
+nav, .nav-bar, div[style*="background-color: teal"] {
+  background-color: #008080 !important; /* Your specific Teal/Dark Green */
+  padding: 10px 0 !important;
+  text-align: center;
+}
+
+nav a {
+  color: white !important;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem !important;
+}
+
+/* 4. RESTORING THE ROUNDED CONTENT CARD */
+.main-content, main, .wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin: -30px auto 30px auto !important; /* Creates that 'overlap' look */
+  border-radius: 30px !important;
+  padding: 40px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* 5. KEEPING YOUR BLUE HEADERS BIG */
 h1, h2, h3 {
-  color: #0000FF !important; /* Your Blue */
-  font-weight: bold !important;
+  color: #0000FF !important; /* Your Bright Blue */
+  font-weight: bold;
 }
 
-h1 { font-size: 2.5rem !important; }
-h2 { font-size: 2rem !important; }
-h3 { font-size: 1.5rem !important; }
-
-/* 4. Ensure Navigation Bar text (the teal bar) also grows */
-nav a, .menu-item {
-  font-size: 0.9rem !important; /* Large but fits in the bar */
-  font-weight: 600 !important;
+/* 6. RESTORING THE YELLOW BUTTONS */
+.button, [style*="background-color: yellow"] {
+  background-color: #fff176 !important; /* Your soft yellow */
+  color: black !important;
+  padding: 15px 30px !important;
+  border-radius: 50px !important;
+  border: none !important;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #d4c65a; /* Button depth */
 }
 
-/* 5. Ensure Button text (the yellow buttons) is bold and clear */
-.button, button, [class*="button"] {
-  font-size: 0.85rem !important;
-  font-weight: bold !important;
-  padding: 12px 24px !important;
+/* 7. THE DASHED PRODUCT BORDER */
+.product-box, [style*="border: dashed"] {
+  border: 2px dashed #008080 !important;
+  border-radius: 15px;
+  padding: 20px;
 }
