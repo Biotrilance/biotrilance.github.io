@@ -1,29 +1,60 @@
-/* Standard Professional Reversion */
+/* --- BIOTRILANCE ORIGINAL THEME RESTORED --- */
+
+html {
+  font-size: 20px; /* Big and clear for seniors */
+}
+
 body {
-  font-family: Arial, sans-serif;
-  font-size: 19px; /* Keeping it readable for seniors */
-  line-height: 1.5;
-  color: #000000; /* Back to pure black */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #000000; /* Pure Black for maximum contrast */
   background-color: #ffffff;
-  padding: 20px;
+  padding: 15px;
 }
 
+/* THE FAMOUS BLUE HEADERS */
 h1, h2, h3 {
-  color: #0000FF; /* Back to your original Blue */
+  color: #0000FF; /* Original Bright Blue */
+  text-transform: none;
+  margin-top: 1.5rem;
 }
 
+/* THE FAMOUS ORANGE ACCENTS */
+h4, strong, .highlight-text {
+  color: #FF8C00; /* Deep Orange / DarkOrange */
+}
+
+/* BUTTONS: BLUE WITH ORANGE HOVER */
 .button {
   display: inline-block;
-  background-color: #0000FF;
-  color: white !important;
-  padding: 10px 20px;
+  background-color: #0000FF; /* Blue */
+  color: #ffffff !important;
+  padding: 12px 24px;
   text-decoration: none;
-  border-radius: 5px;
-  margin: 10px 0;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 10px 5px;
+  border: 2px solid #0000FF;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
+.button:hover {
+  background-color: #FF8C00; /* Turns Orange on hover */
+  border-color: #FF8C00;
+  color: #ffffff !important;
+}
+
+/* CARDS WITH ORANGE BORDERS */
+.highlight-card {
+  border: 3px solid #FF8C00; /* Bold Orange Border */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fffaf0; /* Very light orange tint for the "card" */
+}
+
+/* PRODUCT SUB-CARDS */
+.product-subcard {
+  border-left: 5px solid #0000FF; /* Blue accent line */
+  padding-left: 15px;
+  margin: 15px 0;
 }
