@@ -39,10 +39,15 @@ title: Home
     <a href="{{ site.baseurl }}/prima-diagnostics" class="button">View 1-Step IHC Magic  🧬</a>
   </div>
 
-  <p>Lab life in a nutshell (Back by popular demand!):</p>
-  <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Funny scientists" style="max-width: 400px;">
-  <img src="https://images.cartoonstock.com/lowres/politics-biotechnology-moneymaker-cartoon---EC335886_low.jpg" alt="Biotech money" style="max-width: 400px;">
-  <img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist" style="max-width: 400px;">
-</section>
+ <p>Lab life in a nutshell (Back by popular demand!):</p>
+
+  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+    <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Funny scientists" style="width: 45%; min-width: 280px; margin: 10px 0;">
+    
+    <img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist" style="width: 45%; min-width: 280px; margin: 10px 0;">
+  </div>
+
+</section> ```
+
 
 </div>
