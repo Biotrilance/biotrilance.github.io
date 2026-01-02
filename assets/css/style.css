@@ -1,5 +1,6 @@
-/* --- BIOTRILANCE MASTER CSS: CENTRALIZED HEADER + LEFT CONTENT --- */
+/* --- BIOTRILANCE MASTER CSS --- */
 
+/* Basic layout and font setup [cite: 26, 41] */
 body { 
   font-family: 'Patrick Hand', cursive; 
   margin: 0; 
@@ -7,52 +8,31 @@ body {
   background: linear-gradient(to bottom, #ffe0b2, #ffccbc); 
   color: #333; 
   line-height: 1.6; 
-  font-size: 20px !important; 
-  text-align: left; 
+  font-size: 20px !important; /* Professional readability boost [cite: 27] */
+  text-align: left; /* Base alignment is left [cite: 26] */
 }
 
-/* 1. CENTRALIZED BRANDING AREA */
+/* BRANDING HEADER: This must stay centralized [cite: 28, 62] */
 header { 
   background: #ff7043; 
   padding: 45px 20px; 
   color: white; 
   width: 100%;
   box-sizing: border-box;
-  text-align: center; 
+  text-align: center; /* Forces all content inside header to center [cite: 28] */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Specifically centers the "Biotrilance Pte. Ltd." title */
+/* Force the H1 title to center specifically [cite: 63] */
 h1 { 
-  font-family: 'Patrick Hand', cursive;
-  color: white !important; 
   text-align: center !important; 
-  margin: 0 auto;
+  margin: 0 auto !important;
   width: 100%;
 }
 
-/* 2. LEFT-ALIGNED CONTENT SECTIONS */
-h2, h3, h4 { 
-  font-family: 'Patrick Hand', cursive; 
-  color: #0000FF; 
-  text-align: left; 
-  margin-top: 0;
-}
-
-section { 
-  padding: 40px; 
-  max-width: 1100px; 
-  margin: 30px 40px; 
-  background: white; 
-  border-radius: 25px; 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-  box-sizing: border-box;
-  text-align: left;
-}
-
-/* 3. NAVIGATION & UI */
+/* NAVIGATION: Centered for balance [cite: 29, 67] */
 nav { 
   background: #00695c; 
   padding: 15px; 
@@ -68,8 +48,29 @@ nav a {
   text-decoration: none; 
   font-weight: bold; 
   font-size: 18px !important;
+  margin: 0 15px; /* [cite: 30] */
 }
 
+/* SECTION CONTENT: FIXED CENTRALIZATION */
+section { 
+  padding: 40px; 
+  max-width: 1100px; 
+  margin: 30px auto; /* FIXED: 'auto' centers the card and removes the right-side gap  */
+  background: white; 
+  border-radius: 25px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* [cite: 32] */
+  box-sizing: border-box;
+  text-align: left; /* Text remains left-aligned for readability  */
+}
+
+/* Section Headings remain blue and on the left */
+h2, h3, h4 { 
+  color: #0000FF; 
+  text-align: left; 
+  margin-top: 0;
+}
+
+/* Cards for Products and Highlights [cite: 38, 40] */
 .highlight-card { 
   background: #f9f9f9; 
   padding: 25px; 
@@ -86,6 +87,7 @@ nav a {
   border: 1px solid #ddd; 
 }
 
+/* BUTTONS: Rounded and left-aligned [cite: 34] */
 .button { 
   display: inline-block; 
   padding: 12px 25px; 
@@ -93,19 +95,14 @@ nav a {
   color: #333; 
   text-decoration: none; 
   border-radius: 50px; 
-  font-size: 1.1em !important; 
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* [cite: 35] */
   margin: 10px 5px; 
 }
 
-img { 
-  max-width: 100%; 
-  border-radius: 15px; 
-  margin: 20px 0; 
-  display: block;
-}
+.button:hover { background: #ffb74d; } /* [cite: 36] */
 
+/* GALLERY: For memes and lab photos [cite: 120, 144] */
 .image-gallery {
   display: flex;
   gap: 15px;
@@ -118,12 +115,7 @@ img {
   width: 45%; 
   min-width: 280px; 
   margin: 0;
+  border-radius: 15px; /* [cite: 37] */
 }
 
-footer { 
-  background: #004d40; 
-  color: white; 
-  text-align: center; 
-  padding: 30px 20px; 
-  margin-top: 40px;
-}
+footer { background: #004d40; color: white; text-align: center; padding: 30px 20px; } /* [cite: 33, 79] */
