@@ -54,20 +54,22 @@ nav a {
 /* SECTION CONTENT: FIXED CENTRALIZATION */
 section { 
   padding: 40px; 
-  max-width: 1100px; 
+  max-width: 1100px; /* Limits width so text doesn't stretch too far  */
   margin: 30px auto; /* FIXED: 'auto' centers the card and removes the right-side gap  */
   background: white; 
-  border-radius: 25px; 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* [cite: 32] */
+  border-radius: 25px; /* Nice rounded corners  */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds professional depth [cite: 32] */
   box-sizing: border-box;
-  text-align: left; /* Text remains left-aligned for readability  */
+  text-align: left; /* Keeps your text content professionally left-aligned [cite: 26] */
 }
 
 /* Section Headings remain blue and on the left */
 h2, h3, h4 { 
-  color: #0000FF; 
+  font-family: 'Patrick Hand', cursive; /* Matches your brand font [cite: 41] */
+  color: #0000FF; /* Keeps your section titles bright blue */
   text-align: left; 
   margin-top: 0;
+
 }
 
 /* Cards for Products and Highlights [cite: 38, 40] */
