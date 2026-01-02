@@ -1,4 +1,4 @@
-/* --- BIOTRILANCE MASTER: CENTRALIZED HEADER & LEFT-ALIGNED CONTENT --- */
+/* --- BIOTRILANCE MASTER CSS: CENTRALIZED HEADER + LEFT CONTENT --- */
 
 body { 
   font-family: 'Patrick Hand', cursive; 
@@ -11,7 +11,7 @@ body {
   text-align: left; 
 }
 
-/* 1. UPDATED HEADER BLOCK: Centers the branding area */
+/* 1. CENTRALIZED BRANDING AREA */
 header { 
   background: #ff7043; 
   padding: 45px 20px; 
@@ -24,16 +24,16 @@ header {
   align-items: center;
 }
 
-/* 2. NEW H1 BLOCK: Specifically centers the main title */
+/* Specifically centers the "Biotrilance Pte. Ltd." title */
 h1 { 
   font-family: 'Patrick Hand', cursive;
-  color: white; 
-  text-align: center;
+  color: white !important; 
+  text-align: center !important; 
   margin: 0 auto;
   width: 100%;
 }
 
-/* 3. UPDATED H2-H4 BLOCK: Keeps content headings on the left */
+/* 2. LEFT-ALIGNED CONTENT SECTIONS */
 h2, h3, h4 { 
   font-family: 'Patrick Hand', cursive; 
   color: #0000FF; 
@@ -41,6 +41,18 @@ h2, h3, h4 {
   margin-top: 0;
 }
 
+section { 
+  padding: 40px; 
+  max-width: 1100px; 
+  margin: 30px 40px; 
+  background: white; 
+  border-radius: 25px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* 3. NAVIGATION & UI */
 nav { 
   background: #00695c; 
   padding: 15px; 
@@ -58,28 +70,12 @@ nav a {
   font-size: 18px !important;
 }
 
-section { 
-  padding: 40px; 
-  max-width: 1100px; 
-  margin: 30px 40px; 
-  background: white; 
-  border-radius: 25px; 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-  box-sizing: border-box;
-  text-align: left;
-}
-
 .highlight-card { 
   background: #f9f9f9; 
   padding: 25px; 
   border-radius: 20px; 
   margin: 25px 0; 
   border: 2px dashed #009688; 
-}
-
-.highlight-card h4 { 
-  margin-top: 0; 
-  color: #e65100; 
 }
 
 .product-subcard { 
@@ -103,24 +99,11 @@ section {
   margin: 10px 5px; 
 }
 
-.button:hover { 
-  background: #ffb74d; 
-}
-
 img { 
   max-width: 100%; 
   border-radius: 15px; 
   margin: 20px 0; 
   display: block;
-}
-
-footer { 
-  background: #004d40; 
-  color: white; 
-  text-align: center; 
-  padding: 30px 20px; 
-  margin-top: 40px;
-  width: 100%;
 }
 
 .image-gallery {
@@ -135,15 +118,12 @@ footer {
   width: 45%; 
   min-width: 280px; 
   margin: 0;
-  object-fit: contain;
 }
 
-@media (max-width: 600px) {
-  section {
-    margin: 20px 10px;
-    padding: 20px;
-  }
-  .image-gallery img {
-    width: 100%;
-  }
+footer { 
+  background: #004d40; 
+  color: white; 
+  text-align: center; 
+  padding: 30px 20px; 
+  margin-top: 40px;
 }
