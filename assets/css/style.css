@@ -1,13 +1,64 @@
-body { font-family: 'Patrick Hand', cursive; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffe0b2, #ffccbc); color: #333; line-height: 1.6; font-size: 18px; }
-header { background: #ff7043; padding: 40px 20px; text-align: center; color: white; }
-nav { background: #00695c; padding: 10px; text-align: center; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
-footer { background: #004d40; color: white; text-align: center; padding: 20px; }
-.button { display: inline-block; padding: 15px 30px; background: #fff176; color: #333; text-decoration: none; border-radius: 50px; font-size: 1.2em; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin: 8px 4px; }
-.button:hover { background: #ffb74d; }
-img { max-width: 100%; border-radius: 15px; margin: 20px 0; }
-.highlight-card { background: #f9f9f9; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 2px dashed #009688; }
-.highlight-card h4 { margin-top: 0; color: #e65100; }
-.product-subcard { background: #fff; padding: 15px; border-radius: 10px; margin: 15px 0; border: 1px solid #ddd; }
-h1, h2, h3, h4 { font-family: 'Patrick Hand', cursive; }
+/* --- BIOTRILANCE: MAX READABILITY UPDATE --- */
+
+html {
+  /* This is the master volume for font size */
+  font-size: 22px !important; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #000000; /* Keeps your original Black */
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+/* KEEPING YOUR ORIGINAL BLUE HEADERS - JUST BIGGER */
+h1, h2, h3 {
+  color: #0000FF; 
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+h1 { font-size: 2.5rem !important; }
+h2 { font-size: 2rem !important; }
+h3 { font-size: 1.5rem !important; }
+
+/* KEEPING YOUR ORIGINAL ORANGE HIGHLIGHTS */
+h4, strong {
+  color: #FF8C00; 
+}
+
+/* PARAGRAPH TEXT - FORCED TO BE LARGE */
+p {
+  font-size: 1rem !important; /* This equals 22px */
+  margin-bottom: 1.2rem;
+}
+
+/* KEEPING YOUR ORIGINAL BLUE/ORANGE BUTTONS */
+.button {
+  display: inline-block;
+  background-color: #0000FF;
+  color: #ffffff !important;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 10px 5px;
+  border: 2px solid #0000FF;
+  font-size: 0.9rem !important; /* Keeps buttons slightly smaller than body text for neatness */
+}
+
+.button:hover {
+  background-color: #FF8C00; 
+  border-color: #FF8C00;
+}
+
+/* KEEPING YOUR ORIGINAL ORANGE BORDER CARDS */
+.highlight-card {
+  border: 3px solid #FF8C00; 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fffaf0;
+}
