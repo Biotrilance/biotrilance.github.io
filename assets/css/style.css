@@ -1,71 +1,41 @@
-/* --- BIOTRILANCE: COLOR RESTORATION + BIG FONT --- */
+/* --- BIOTRILANCE: TARGETED TEXT SCALE ONLY --- */
 
-/* 1. THE FONT SIZE BOOST */
+/* 1. This grows the text GLOBALLY but doesn't touch boxes */
 html {
-  font-size: 22px !important; 
+  font-size: 21px !important; /* Increasing to Apex Pharma comfort levels */
 }
 
-body {
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Matching your playful vibe */
-  background-color: #fdf5e6; /* Soft cream background */
-  margin: 0;
-  padding: 0;
-  color: #333;
+/* 2. Ensuring the body text follows the scale and stays black */
+p, li, span, div:not([class*="header"]):not([class*="nav"]) {
+  font-size: 1rem !important; 
+  line-height: 1.7 !important;
+  color: #000000 !important;
 }
 
-/* 2. RESTORING THE ORANGE HEADER PANEL */
-header, .site-header, div[style*="background-color: orange"] {
-  background-color: #ff7f50 !important; /* Your specific Bright Orange */
-  color: white !important;
-  padding: 40px 20px !important;
-  text-align: center;
-}
-
-/* 3. RESTORING THE TEAL NAVIGATION BAR */
-nav, .nav-bar, div[style*="background-color: teal"] {
-  background-color: #008080 !important; /* Your specific Teal/Dark Green */
-  padding: 10px 0 !important;
-  text-align: center;
-}
-
-nav a {
-  color: white !important;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9rem !important;
-}
-
-/* 4. RESTORING THE ROUNDED CONTENT CARD */
-.main-content, main, .wrapper {
-  background-color: white;
-  max-width: 1000px;
-  margin: -30px auto 30px auto !important; /* Creates that 'overlap' look */
-  border-radius: 30px !important;
-  padding: 40px !important;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-/* 5. KEEPING YOUR BLUE HEADERS BIG */
+/* 3. Keeping your headers BLUE and BIG */
 h1, h2, h3 {
-  color: #0000FF !important; /* Your Bright Blue */
-  font-weight: bold;
+  color: #0000FF !important; /* Restoration of your Bright Blue */
+  font-weight: bold !important;
+  margin-top: 1.2rem !important;
 }
 
-/* 6. RESTORING THE YELLOW BUTTONS */
-.button, [style*="background-color: yellow"] {
-  background-color: #fff176 !important; /* Your soft yellow */
-  color: black !important;
-  padding: 15px 30px !important;
-  border-radius: 50px !important;
-  border: none !important;
-  font-weight: bold;
-  box-shadow: 0 4px 0 #d4c65a; /* Button depth */
+h1 { font-size: 2.2rem !important; }
+h2 { font-size: 1.8rem !important; }
+
+/* 4. Protecting the Header & Nav from getting 'pushed' */
+/* We reset these to standard sizing so the panels don't break */
+header, .site-header, nav, .nav-bar {
+  font-size: 18px !important; 
 }
 
-/* 7. THE DASHED PRODUCT BORDER */
-.product-box, [style*="border: dashed"] {
-  border: 2px dashed #008080 !important;
-  border-radius: 15px;
-  padding: 20px;
+/* 5. Keeping the Orange highlights for emphasis */
+strong, b, .orange-text {
+  color: #FF8C00 !important; 
+}
+
+/* 6. Ensuring the buttons stay yellow/blue but clear */
+.button, button {
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
 }
