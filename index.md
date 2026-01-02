@@ -39,27 +39,22 @@ title: Home
 
 <section id="biotech-madness">
 <h2>Biotech Madness: Mad Scientists Welcome!  🧪 </h2>
-<p>Contracts with antibody wizards, one-step IHC pros, and whoever else joins the chaos! Antibody discovery, cell line development, making proteins behave, and more. Researchers, prepare for awareness overload!  🚀 </p>
-
-<h3>Current Highlights</h3>
+<p>Contracts with antibody wizards, one-step IHC pros, and whoever else joins the chaos! Antibody discovery, cell line development, making proteins behave, and more.</p>
 
 <div class="highlight-card">
 <h4><a href="{{ site.baseurl }}/germinal-biotech">Germinal Biotech  🧫 </a></h4>
-<p>Antibody Discovery (finding the needle in the immune haystack  🪡 ), Cell Line Shenanigans, Humanization (mouse → human  🐭 → 🧑 ), Affinity Maturation (stronger hugs  🤗 )</p>
+<p>Antibody Discovery, Cell Line Shenanigans, Humanization, and Affinity Maturation.</p>
 <a href="https://www.germinalbiotech.com/" class="button" target="_blank">Explore Germinal Biotech  🧫 </a>
 </div>
 
 <div class="highlight-card">
 <h4><a href="{{ site.baseurl }}/prima-diagnostics">Prima Diagnostics – ExactBiofusion® One-Step IHC Magic  🧬🔬 </a></h4>
-<p>Traditional 2-step indirect IHC? Complicated labeling, low yield, batch variations, waste of precious antibodies... NO THANKS! 😤 <br>ExactBiofusion® is the direct 1-step hero: Primary antibody fused directly to HRP (or ALP/luciferase). Homogeneous, high-yield, simple process, less cost, no secondary antibody drama. Works on frozen AND FFPE samples with basically no protocol change!  🥳 </p>
-<p>Prima Diagnostics (Nanjing) – Launched Jan 01, 2026 (RUO). Pathologists, get ready for simpler, cleaner IHC!  🚀 </p>
+<p>ExactBiofusion® is the direct 1-step hero: Primary antibody fused directly to HRP. No secondary antibody drama!</p>
 <a href="#" class="button" target="_blank">Explore Prima Diagnostics  🧬 </a>
 </div>
 
-<p>Lab life in a nutshell (back to the classics!):</p>
+<p>Lab life in a nutshell:</p>
 <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Funny scientists cartoon">
-<img src="https://images.cartoonstock.com/lowres/politics-biotechnology-moneymaker-cartoon---EC335886_low.jpg" alt="Biotech money cartoon">
-<img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist lab">
 </section>
 
 <section id="contact">
