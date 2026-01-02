@@ -4,3 +4,4 @@ url: ""
 baseurl: ""
 markdown: kramdown
 permalink: pretty
+theme: none
