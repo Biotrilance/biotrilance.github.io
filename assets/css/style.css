@@ -1,70 +1,29 @@
-/* --- BIOTRILANCE GLOBAL THEME UPDATE --- */
-
-/* 1. TYPOGRAPHY & READABILITY */
-html {
-  font-size: 19px; /* Slightly larger base for senior eyes */
-  scroll-behavior: smooth;
-}
-
+/* Standard Professional Reversion */
 body {
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7; /* Increased spacing between lines for clarity */
-  color: #2c3e50; /* Deep charcoal, easier on the eyes than pure black */
+  font-family: Arial, sans-serif;
+  font-size: 19px; /* Keeping it readable for seniors */
+  line-height: 1.5;
+  color: #000000; /* Back to pure black */
   background-color: #ffffff;
+  padding: 20px;
 }
 
-/* 2. HIERARCHY & BEAUTY */
 h1, h2, h3 {
-  font-weight: 700;
-  line-height: 1.3;
-  color: #1a5276; /* Sophisticated Deep Sea Blue */
-  margin-top: 1.8rem;
-  margin-bottom: 1rem;
+  color: #0000FF; /* Back to your original Blue */
 }
 
-h2 { border-bottom: 2px solid #eaf2f8; padding-bottom: 10px; }
-
-/* 3. CARD DESIGN (For VisuEVO & Biotech Sections) */
-.highlight-card {
-  background: #ffffff;
-  border: 1px solid #e1e8ed;
-  border-radius: 12px;
-  padding: 25px;
-  margin: 20px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft, modern shadow */
-  transition: transform 0.2s ease;
-}
-
-.highlight-card:hover {
-  transform: translateY(-3px); /* Subtle lift on hover */
-}
-
-/* 4. BUTTON NEATNESS */
 .button {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #0000FF;
   color: white !important;
-  padding: 12px 28px;
-  border-radius: 50px; /* Modern rounded style */
+  padding: 10px 20px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  transition: background 0.3s ease;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
-.button:hover {
-  background-color: #0056b3;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
-}
-
-/* 5. IMAGE CONSISTENCY */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 1rem auto; /* Centers images automatically */
+  margin: 10px 0;
 }
