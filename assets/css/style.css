@@ -1,4 +1,4 @@
-/* --- BIOTRILANCE MASTER CSS --- */
+/* --- BIOTRILANCE MASTER: 20PX + CENTERED + POLISHED --- */
 
 body { 
   font-family: 'Patrick Hand', cursive; 
@@ -7,24 +7,57 @@ body {
   background: linear-gradient(to bottom, #ffe0b2, #ffccbc); 
   color: #333; 
   line-height: 1.6; 
-  font-size: 20px !important; /* The 'Apex Pharma' standard */
+  font-size: 20px !important; 
   text-align: center; 
 }
 
-/* This targets the <section> tags in your index.md */
+/* --- THE TINY POLISH: WIDTH ANCHORS --- */
+header, nav, footer {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+header { 
+  background: #ff7043; 
+  padding: 45px 20px; 
+  color: white; 
+}
+
+nav { 
+  background: #00695c; 
+  padding: 15px; 
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+nav a { 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 18px !important;
+}
+
+/* --- THE CENTERED CONTENT CARD --- */
 section { 
   padding: 40px; 
+  width: 90%; 
   max-width: 900px; 
-  margin: 30px auto; /* This centers the white card */
+  margin: 30px auto; /* Perfect centering */
   background: white; 
   border-radius: 30px; 
   box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-  text-align: left; /* Aligns text inside the card for readability */
+  text-align: left; /* Readable text alignment inside */
 }
 
-header { background: #ff7043; padding: 45px 20px; color: white; }
-nav { background: #00695c; padding: 15px; display: flex; justify-content: center; gap: 20px; }
-nav a { color: white; text-decoration: none; font-weight: bold; font-size: 18px !important; }
+/* --- RESTORED FOOTER --- */
+footer { 
+  background: #004d40; 
+  color: white; 
+  text-align: center; 
+  padding: 30px 20px; 
+  margin-top: 40px;
+}
 
 h1, h2, h3, h4 { 
   font-family: 'Patrick Hand', cursive; 
@@ -50,4 +83,13 @@ img {
   border-radius: 15px; 
   margin: 20px auto; 
   display: block; 
+}
+
+/* Dash border for cards */
+.highlight-card { 
+  background: #f9f9f9; 
+  padding: 25px; 
+  border-radius: 20px; 
+  margin: 25px 0; 
+  border: 2px dashed #009688; 
 }
