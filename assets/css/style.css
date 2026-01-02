@@ -121,3 +121,12 @@ h1, h2, h3, h4 {
     margin: 5px 0;
   }
 }
+
+/* --- THE TINY POLISH: LAB LIFE IMAGE ALIGNMENT --- */
+/* This part goes AFTER the final } of the media query */
+div[style*="display: flex"] img {
+  align-self: flex-start;
+  object-fit: contain;
+  background-color: white;
+  border: 1px solid #eee; /* Optional: adds a clean border to cartoons */
+}
