@@ -1,4 +1,4 @@
-/* --- BIOTRILANCE: PREVIOUS LAYOUT + 20PX FONT --- */
+/* --- BIOTRILANCE: PREFERRED LAYOUT WITH 20PX FONT --- */
 
 body { 
   font-family: 'Patrick Hand', cursive; 
@@ -7,7 +7,7 @@ body {
   background: linear-gradient(to bottom, #ffe0b2, #ffccbc); 
   color: #333; 
   line-height: 1.6; 
-  /* --- FONT SIZE SET TO 20PX --- */
+  /* Updated to 20px as requested */
   font-size: 20px !important; 
 }
 
@@ -29,7 +29,7 @@ nav a {
   margin: 0 15px; 
   text-decoration: none; 
   font-weight: bold; 
-  font-size: 0.95rem !important; /* Scaled slightly for the nav bar */
+  font-size: 0.95rem !important; 
 }
 
 section { 
@@ -56,10 +56,10 @@ footer {
   color: #333; 
   text-decoration: none; 
   border-radius: 50px; 
-  font-size: 1.1rem !important; 
+  /* Set to 1.2em relative to the new 20px base */
+  font-size: 1.2em !important; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
   margin: 8px 4px; 
-  font-weight: bold;
 }
 
 .button:hover { 
@@ -83,12 +83,17 @@ img {
 .highlight-card h4 { 
   margin-top: 0; 
   color: #e65100; 
-  font-size: 1.3rem !important;
+}
+
+.product-subcard { 
+  background: #fff; 
+  padding: 15px; 
+  border-radius: 10px; 
+  margin: 15px 0; 
+  border: 1px solid #ddd; 
 }
 
 h1, h2, h3, h4 { 
   font-family: 'Patrick Hand', cursive; 
-  color: #0000FF; 
-  font-size: 1.6rem !important;
-  margin-bottom: 15px;
+  color: #0000FF; /* Keeping your signature Blue titles */
 }
