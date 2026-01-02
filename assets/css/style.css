@@ -1,4 +1,4 @@
-/* --- BIOTRILANCE MASTER: 20PX + CENTERED + POLISHED --- */
+/* --- BIOTRILANCE: 20PX FONT + REVERTED LAYOUT + MOBILE FIX --- */
 
 body { 
   font-family: 'Patrick Hand', cursive; 
@@ -7,89 +7,117 @@ body {
   background: linear-gradient(to bottom, #ffe0b2, #ffccbc); 
   color: #333; 
   line-height: 1.6; 
+  /* Base font increased to 20px */
   font-size: 20px !important; 
-  text-align: center; 
-}
-
-/* --- THE TINY POLISH: WIDTH ANCHORS --- */
-header, nav, footer {
-  width: 100% !important;
-  box-sizing: border-box;
 }
 
 header { 
   background: #ff7043; 
-  padding: 45px 20px; 
+  padding: 40px 20px; 
+  text-align: center; 
   color: white; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav { 
   background: #00695c; 
-  padding: 15px; 
-  display: flex;
-  justify-content: center; 
-  gap: 20px;
+  padding: 10px; 
+  text-align: center; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a { 
   color: white; 
+  margin: 0 10px; 
   text-decoration: none; 
   font-weight: bold; 
-  font-size: 18px !important;
+  display: inline-block; /* Helps with mobile tapping */
 }
 
-/* --- THE CENTERED CONTENT CARD --- */
 section { 
-  padding: 40px; 
-  width: 90%; 
-  max-width: 900px; 
-  margin: 30px auto; /* Perfect centering */
+  padding: 40px 20px; 
+  max-width: 1000px; 
+  margin: 20px auto; 
   background: white; 
-  border-radius: 30px; 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-  text-align: left; /* Readable text alignment inside */
+  border-radius: 20px; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+  box-sizing: border-box;
 }
 
-/* --- RESTORED FOOTER --- */
 footer { 
   background: #004d40; 
   color: white; 
   text-align: center; 
-  padding: 30px 20px; 
-  margin-top: 40px;
+  padding: 20px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button { 
+  display: inline-block; 
+  padding: 15px 30px; 
+  background: #fff176; 
+  color: #333; 
+  text-decoration: none; 
+  border-radius: 50px; 
+  font-size: 1.1em; /* Scaled relative to 20px */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+  margin: 8px 4px; 
+  font-weight: bold;
+}
+
+.button:hover { 
+  background: #ffb74d; 
+}
+
+img { 
+  max-width: 100%; 
+  height: auto;
+  border-radius: 15px; 
+  margin: 20px 0; 
+}
+
+.highlight-card { 
+  background: #f9f9f9; 
+  padding: 20px; 
+  border-radius: 15px; 
+  margin-bottom: 20px; 
+  border: 2px dashed #009688; 
+}
+
+.highlight-card h4 { 
+  margin-top: 0; 
+  color: #e65100; 
 }
 
 h1, h2, h3, h4 { 
   font-family: 'Patrick Hand', cursive; 
   color: #0000FF; 
-  text-align: center; 
 }
 
-.button { 
-  display: inline-block; 
-  padding: 12px 25px; 
-  background: #fff176; 
-  color: #333; 
-  text-decoration: none; 
-  border-radius: 50px; 
-  font-size: 1.1em !important; 
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-  margin: 10px 5px; 
-}
+/* --- MOBILE SPECIFIC TWEAKS --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px !important; /* Slightly smaller on tiny screens so words don't break */
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-img { 
-  max-width: 100%; 
-  border-radius: 15px; 
-  margin: 20px auto; 
-  display: block; 
-}
+  section {
+    padding: 20px 15px;
+    width: 95%;
+  }
 
-/* Dash border for cards */
-.highlight-card { 
-  background: #f9f9f9; 
-  padding: 25px; 
-  border-radius: 20px; 
-  margin: 25px 0; 
-  border: 2px dashed #009688; 
+  .button {
+    width: 100%; /* Full width buttons for easier finger tapping on mobile */
+    box-sizing: border-box;
+    margin: 5px 0;
+  }
 }
