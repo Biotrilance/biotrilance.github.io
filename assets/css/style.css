@@ -1,41 +1,25 @@
-/* --- BIOTRILANCE: TARGETED TEXT SCALE ONLY --- */
+/* THE NUCLEAR OPTION - FORCES FONT SIZE ON EVERYTHING */
 
-/* 1. This grows the text GLOBALLY but doesn't touch boxes */
-html {
-  font-size: 21px !important; /* Increasing to Apex Pharma comfort levels */
+* {
+  font-size: 22px !important; /* Forces every single element to grow */
 }
 
-/* 2. Ensuring the body text follows the scale and stays black */
-p, li, span, div:not([class*="header"]):not([class*="nav"]) {
-  font-size: 1rem !important; 
-  line-height: 1.7 !important;
-  color: #000000 !important;
-}
-
-/* 3. Keeping your headers BLUE and BIG */
 h1, h2, h3 {
-  color: #0000FF !important; /* Restoration of your Bright Blue */
-  font-weight: bold !important;
-  margin-top: 1.2rem !important;
+  font-size: 1.8rem !important; /* Keeps headers proportionally bigger */
+  color: #0000FF !important;
 }
 
-h1 { font-size: 2.2rem !important; }
-h2 { font-size: 1.8rem !important; }
-
-/* 4. Protecting the Header & Nav from getting 'pushed' */
-/* We reset these to standard sizing so the panels don't break */
-header, .site-header, nav, .nav-bar {
-  font-size: 18px !important; 
+/* RESTORE YOUR LAYOUT COLORS (Protecting them from the 'All' rule) */
+.site-header, header {
+  background-color: #ff7f50 !important; /* Orange */
 }
 
-/* 5. Keeping the Orange highlights for emphasis */
-strong, b, .orange-text {
-  color: #FF8C00 !important; 
+nav, .nav-bar {
+  background-color: #008080 !important; /* Teal */
 }
 
-/* 6. Ensuring the buttons stay yellow/blue but clear */
-.button, button {
+.button {
+  background-color: #fff176 !important; /* Yellow */
+  color: #000 !important;
   font-size: 0.8rem !important;
-  font-weight: bold !important;
-  padding: 10px 20px !important;
 }
