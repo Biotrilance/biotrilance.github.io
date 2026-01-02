@@ -1,13 +1,70 @@
-body { font-family: 'Patrick Hand', cursive; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffe0b2, #ffccbc); color: #333; line-height: 1.6; font-size: 18px; }
-header { background: #ff7043; padding: 40px 20px; text-align: center; color: white; }
-nav { background: #00695c; padding: 10px; text-align: center; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
-footer { background: #004d40; color: white; text-align: center; padding: 20px; }
-.button { display: inline-block; padding: 15px 30px; background: #fff176; color: #333; text-decoration: none; border-radius: 50px; font-size: 1.2em; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin: 8px 4px; }
-.button:hover { background: #ffb74d; }
-img { max-width: 100%; border-radius: 15px; margin: 20px 0; }
-.highlight-card { background: #f9f9f9; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 2px dashed #009688; }
-.highlight-card h4 { margin-top: 0; color: #e65100; }
-.product-subcard { background: #fff; padding: 15px; border-radius: 10px; margin: 15px 0; border: 1px solid #ddd; }
-h1, h2, h3, h4 { font-family: 'Patrick Hand', cursive; }
+/* --- BIOTRILANCE GLOBAL THEME UPDATE --- */
+
+/* 1. TYPOGRAPHY & READABILITY */
+html {
+  font-size: 19px; /* Slightly larger base for senior eyes */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7; /* Increased spacing between lines for clarity */
+  color: #2c3e50; /* Deep charcoal, easier on the eyes than pure black */
+  background-color: #ffffff;
+}
+
+/* 2. HIERARCHY & BEAUTY */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1a5276; /* Sophisticated Deep Sea Blue */
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h2 { border-bottom: 2px solid #eaf2f8; padding-bottom: 10px; }
+
+/* 3. CARD DESIGN (For VisuEVO & Biotech Sections) */
+.highlight-card {
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft, modern shadow */
+  transition: transform 0.2s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+/* 4. BUTTON NEATNESS */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white !important;
+  padding: 12px 28px;
+  border-radius: 50px; /* Modern rounded style */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 5. IMAGE CONSISTENCY */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem auto; /* Centers images automatically */
+}
