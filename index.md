@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<div style="font-size: 1.2rem; line-height: 1.6;">
+<div>
 
 <section id="pharma-geek">
   <h2>Pharma Geek: Where Cool Products Meet Real Needs!  👀</h2>
