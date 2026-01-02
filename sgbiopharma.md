@@ -2,23 +2,28 @@
 layout: default
 title: SGBioPharma - Eye Care Innovations
 ---
-<h2>SGBioPharma Pte Ltd  👀 </h2>
-<p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films  💧 !</p>
-<div class="highlight-card">
-<a href="https://www.biopharma.sg" class="button" target="_blank">Visit SGBioPharma Website  👀 </a>
+<div style="max-width: 800px; margin: 0 auto;">
+  <h2>SGBioPharma Pte Ltd  👀</h2>
+  <p>Bringing European-standard specialty pharma to the heart of Singapore.</p>
 
-<div class="product-subcard">
-<h4>VisuEVO  💧 </h4>
-<p>Preservative-free eye drops for that spa-day tear film rebuild.</p>
-<img src="https://m.media-amazon.com/images/I/61YI0+l+XtL.jpg" alt="VisuEVO bottle">
-<a href="https://www.biopharma.sg/products/visuevo-preservative-and-phosphate-free-eye-drops-10ml" class="button" target="_blank">Buy VisuEVO Online  💧 </a>
-<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7308118/" class="button" target="_blank">Evidence-based Science  🔬 </a>
-</div>
+  <div class="highlight-card">
+    <div style="text-align: center;">
+      <h3>VisuEVO® Technical Overview  💧</h3>
+      <img src="https://m.media-amazon.com/images/I/61YI0+l+XtL.jpg" alt="VisuEVO bottle" style="max-width: 180px; margin: 20px 0;">
+    </div>
 
-<div class="product-subcard">
-<h4>VisuECTOINE  🌟 </h4>
-<p>Triple-action relief for allergic conjunctivitis and dry eye irritation.</p>
-<img src="https://www.visufarma.com/wp-content/uploads/2021/11/VISUECTOIN-12-2025.png" alt="VisuECTOINE bottle">
-<a href="https://www.biopharma.sg/products/visuectoine" class="button" target="_blank">Buy VisuECTOINE Online  🌟 </a>
-</div>
+    <div style="background: #f9f9f9; padding: 20px; border-radius: 10px;">
+      <h4>🔬 Advanced Composition</h4>
+      <ul>
+        <li><strong>Phospholipids & Omega-3:</strong> Essential for lipid layer repair.</li>
+        <li><strong>Vitamin D & A:</strong> Promotes ocular surface health.</li>
+        <li><strong>Preservative-Free:</strong> Formulated for maximum tolerability.</li>
+      </ul>
+      <p><em>Ideal for: Dry eye due to excessive evaporation, contact lens wearers, and post-surgery recovery.</em></p>
+    </div>
+
+    <div style="text-align: center; margin-top: 25px;">
+      <a href="https://www.biopharma.sg/zh-cn/" class="button" target="_blank">Visit Official Shop (CN)  🛒</a>
+    </div>
+  </div>
 </div>
