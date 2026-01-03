@@ -1,51 +1,166 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Biotrilance Pte. Ltd.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --electric-orange: #FF6B2B;
+            --deep-teal: #006B5F;
+            --peach-bg: #FFE8C3;
+            --link-blue: #0969da;
+            --header-white: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--peach-bg);
+            color: #1f2328;
+            line-height: 1.5;
+        }
+        header {
+            background-color: var(--electric-orange);
+            color: var(--header-white);
+            text-align: center;
+            padding: 48px 24px;
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            font-weight: 600; 
+            font-family: 'Caveat', cursive; 
+            letter-spacing: 1px;
+        }
+        .tagline { font-size: 1.1rem; margin-top: 12px; opacity: 0.95; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .quote { font-style: italic; margin-top: 20px; font-size: 1rem; opacity: 0.9; }
+        .quote-attribution { font-size: 0.9rem; margin-top: 8px; opacity: 0.8; }
+        
+        nav {
+            background-color: var(--deep-teal);
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            position: sticky; top: 0; z-index: 1000;
+        }
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
 
-<section class="card">
-    <h2>Pharma Geek 👀</h2>
-    <p>Geeking out over innovative eye care and pharma solutions that actually help clinicians and patients.</p>
-   
-    <div class="cartoon-area">
-        <div class="image-row">
-            <img src="https://media.tenor.com/OlGtVsIj54YAAAAe/patrick-patrick-star.png" alt="Patrick Star dry eye struggle">
-            <img src="https://media.tenor.com/wuVzNDgShwsAAAAM/spongebob-dry.gif" alt="SpongeBob dry eye meme">
-        </div>
-        <div class="caption">The eternal dry eye struggle... (We feel you!)</div>
+        .main-container {
+            display: flex; flex-wrap: wrap;
+            gap: 24px; padding: 32px 16px;
+            max-width: 1400px; margin: 0 auto;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 12px;
+            padding: 24px;
+            flex: 1; min-width: 380px;
+            display: flex; flex-direction: column;
+            box-shadow: 0 1px 3px rgba(31,35,40,0.12);
+        }
+        h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+        p { margin: 12px 0; }
+        .disclaimer { font-size: 0.9rem; color: #656d76; font-style: italic; margin: 8px 0 16px; }
+
+        .cartoon-area {
+            background: #f6f8fa;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border: 2px dashed var(--deep-teal);
+        }
+        .cartoon-area img {
+            max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .caption { font-style: italic; color: #656d76; margin-top: 12px; font-size: 0.95rem; }
+
+        .button {
+            display: inline-block;
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            color: var(--link-blue);
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: auto;
+            align-self: flex-start;
+            transition: 0.2s;
+        }
+        .button:hover { background-color: #ebf0f4; }
+
+        @media (max-width: 768px) {
+            .main-container { flex-direction: column; padding: 16px; }
+            .card { min-width: 100%; }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biotrilance Pte. Ltd.</h1>
+    <div class="tagline">
+        Singapore's Most Serious Biotech Showcase... <br>
+        From ancient remedies to gene therapy and everything in between! [cite: 3, 4]
+        <div class="quote">"For a drug is of no benefit, if it does not also reach the one who needs it."</div>
+        <div class="quote-attribution">— Galen of Pergamon [cite: 6, 7]</div>
     </div>
-   
-    <a href="{{ site.baseurl }}/sgbiopharma" class="button">Dive into SGBioPharma 👀</a>
-</section>
+</header>
 
-<section class="card">
-    <h2>Biotech Madness 🧪</h2>
-    <p>Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry.</p>
-   
-    <div class="cartoon-area">
-        <div class="image-row">
+<nav>
+    <a href="/">Home 🏠</a>
+    <a href="/sgbiopharma">SGBioPharma 👁️</a>
+    <a href="https://www.germinalbiotech.com/">Germinal Biotech 🧪</a>
+    <a href="/prima-diagnostics">Prima Diag 🔬</a>
+    <a href="/contact">Contact 📞</a>
+</nav>
+
+<main class="main-container">
+    <section class="card">
+        <h2>Pharma Geek 👀</h2>
+        <p>Geeking out over innovative eye care and pharma solutions that actually help clinicians and patients. [cite: 11]</p>
+        <div class="cartoon-area">
+            <img src="https://media.tenor.com/wuVzNDgShwsAAAAM/spongebob-dry.gif" alt="Dry eye struggle">
+            <div class="caption">The eternal dry eye struggle... (We feel you!)</div>
+        </div>
+        <a href="/sgbiopharma" class="button">Dive into SGBioPharma 👀</a>
+    </section>
+
+    <section class="card">
+        <h2>Biotech Madness 🧪</h2>
+        <p>Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry. [cite: 11]</p>
+        <div class="cartoon-area">
             <img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist">
-            <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Funny scientists">
+            <div class="caption">When antibody discovery feels like alchemy 🧙‍♂️</div>
         </div>
-        <div class="caption">When antibody discovery feels like alchemy 🧙‍♂️</div>
-    </div>
-   
-    <a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech 🚀</a>
-</section>
+        <a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech 🚀</a>
+    </section>
 
-<section class="card">
-    <h2>Prima One-Step IHC Magic 🔬</h2>
-    <p><strong>Research Use Only (RUO)</strong> – Not registered as an IVD with HSA.</p>
-    <p class="disclaimer">For research and laboratory use only; not for diagnostic procedures.</p>
-    <p>Revolutionary one-step IHC: primary antibody fused directly to HRP. Skip the secondary – cleaner, faster, high-yield staining magic.</p>
-   
-    <div class="cartoon-area">
-        <div class="image-row">
-            <img src="https://media.gettyimages.com/id/463866801/vector/scientist-with-microscope.jpg?s=612x612" alt="Scientist celebrating IHC success">
-            <!-- If you want two images here later, just add another <img> -->
+    <section class="card">
+        <h2>Prima One-Step IHC Magic 🔬</h2>
+        <p><strong>Research Use Only (RUO)</strong> – Not registered as an IVD with HSA. [cite: 167]</p>
+        <p class="disclaimer">For research and laboratory use only; not for diagnostic procedures. [cite: 168]</p>
+        <p>Revolutionary one-step IHC: primary antibody fused directly to HRP. Skip the secondary drama! [cite: 11]</p>
+        <div class="cartoon-area">
+            <img src="https://media.gettyimages.com/id/463866801/vector/scientist-with-microscope.jpg?s=612x612" alt="Scientist celebrating">
+            <div class="caption">Turning complex IHC into one-step magic 🪄</div>
         </div>
-        <div class="caption">Turning complex IHC into one-step magic 🪄</div>
-    </div>
-   
-    <a href="{{ site.baseurl }}/prima-diagnostics" class="button">Discover Prima Diagnostics 🔬</a>
-</section>
+        <a href="/prima-diagnostics" class="button">Discover Prima Diagnostics 🔬</a>
+    </section>
+</main>
+
+<footer style="background: #004D40; color: white; text-align: center; padding: 24px; margin-top: 40px;">
+    <p style="font-style: italic; margin-bottom: 8px;">"The humor is for the soul, the science is for the cells."</p>
+    <p>📧 Biotrilance.SG@biotrilance.com [cite: 11]</p>
+    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda 😏 [cite: 11]</p>
+</footer>
+
+</body>
+</html>
