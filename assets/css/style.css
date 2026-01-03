@@ -1,6 +1,6 @@
 /* --- BIOTRILANCE MASTER CSS --- */
 
-/* Basic layout and font setup [cite: 26, 41] */
+/* Basic layout and font setup  */
 body { 
   font-family: 'Patrick Hand', cursive; 
   margin: 0; 
@@ -8,31 +8,31 @@ body {
   background: linear-gradient(to bottom, #ffe0b2, #ffccbc); 
   color: #333; 
   line-height: 1.6; 
-  font-size: 20px !important; /* Professional readability boost [cite: 27] */
-  text-align: left; /* Base alignment is left [cite: 26] */
+  font-size: 20px !important; /* Professional readability boost  */
+  text-align: left; /* Base alignment is left  */
 }
 
-/* BRANDING HEADER: This must stay centralized [cite: 28, 62] */
+/* BRANDING HEADER: This must stay centralized  */
 header { 
   background: #ff7043; 
   padding: 45px 20px; 
   color: white; 
   width: 100%;
   box-sizing: border-box;
-  text-align: center; /* Forces all content inside header to center [cite: 28] */
+  text-align: center; /* Forces all content inside header to center  */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Force the H1 title to center specifically [cite: 63] */
+/* Force the H1 title to center specifically  */
 h1 { 
   text-align: center !important; 
   margin: 0 auto !important;
   width: 100%;
 }
 
-/* NAVIGATION: Centered for balance [cite: 29, 67] */
+/* NAVIGATION: Centered for balance  */
 nav { 
   background: #00695c; 
   padding: 15px; 
@@ -48,7 +48,7 @@ nav a {
   text-decoration: none; 
   font-weight: bold; 
   font-size: 18px !important;
-  margin: 0 15px; /* [cite: 30] */
+  margin: 0 15px; /*  */
 }
 
 /* SECTION CONTENT: FIXED CENTRALIZATION */
@@ -58,14 +58,14 @@ section {
   margin: 30px auto; /* FIXED: 'auto' centers the card and removes the right-side gap  */
   background: white; 
   border-radius: 25px; /* Nice rounded corners  */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds professional depth [cite: 32] */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds professional depth  */
   box-sizing: border-box;
-  text-align: left; /* Keeps your text content professionally left-aligned [cite: 26] */
+  text-align: left; /* Keeps your text content professionally left-aligned  */
 }
 
 /* Section Headings remain blue and on the left */
 h2, h3, h4 { 
-  font-family: 'Patrick Hand', cursive; /* Matches your brand font [cite: 41] */
+  font-family: 'Patrick Hand', cursive; /* Matches your brand font  */
   color: #0000FF; /* Keeps your section titles bright blue */
   text-align: left; 
   margin-top: 0;
@@ -102,9 +102,9 @@ h2, h3, h4 {
   margin: 10px 5px; 
 }
 
-.button:hover { background: #ffb74d; } /* [cite: 36] */
+.button:hover { background: #ffb74d; } /*  
 
-/* GALLERY: For memes and lab photos [cite: 120, 144] */
+/* GALLERY: For memes and lab photos  */
 .image-gallery {
   display: flex;
   gap: 15px;
@@ -120,4 +120,4 @@ h2, h3, h4 {
   border-radius: 15px; /* [cite: 37] */
 }
 
-footer { background: #004d40; color: white; text-align: center; padding: 30px 20px; } /* [cite: 33, 79] */
+footer { background: #004d40; color: white; text-align: center; padding: 30px 20px; } /*  
