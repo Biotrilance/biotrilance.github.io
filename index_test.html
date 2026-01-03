@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
     <style>
-        /* COLORS SAMPLED FROM YOUR FAVORITE SCREENSHOTS */
+        /* COLOR PALETTE RESTORATION */
         body { 
             font-family: Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background-color: #FFE8C3; /* Peach background */
+            background-color: #FFE8C3; /* Rich Peach Background */
             color: #333; 
             line-height: 1.6; 
         }
@@ -21,9 +21,10 @@
             text-align: center; 
             padding: 50px 20px; 
         }
+        header h1 { margin: 0; font-size: 2.8em; }
 
         nav { 
-            background-color: #006B5F; /* Teal Nav */
+            background-color: #006B5F; /* Deep Teal */
             padding: 15px; 
             text-align: center; 
             position: sticky; 
@@ -32,20 +33,20 @@
         }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
 
-        /* BLUE TITLES FROM YOUR MASTER CSS */
+        /* TYPOGRAPHY */
         h2, h3, h4 { 
-            color: #0000FF !important; 
+            color: #0000FF !important; /* Bright Blue Section Titles */
             text-align: left; 
             margin-top: 10px;
         }
 
-        /* SIDE-BY-SIDE GRID SYSTEM */
+        /* SIDE-BY-SIDE LAYOUT ENGINE */
         .main-container { 
             display: flex; 
             flex-wrap: wrap; 
             gap: 25px; 
             padding: 40px 20px; 
-            max-width: 1200px; 
+            max-width: 1300px; 
             margin: 0 auto; 
             justify-content: center; 
         }
@@ -54,25 +55,26 @@
             background: white; 
             border-radius: 20px; 
             padding: 30px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
             flex: 1; 
             min-width: 450px; 
-            max-width: 580px;
+            max-width: 600px;
             display: flex;
             flex-direction: column;
-            border-top: 10px solid #006B5F;
+            border-top: 10px solid #006B5F; /* Teal Accent Bar */
         }
 
         .button { 
             display: inline-block; 
-            background: #FFF176; /* Yellow button */
+            background: #FFF176; /* Yellow CTA [cite: 19] */
             color: #333; 
             padding: 12px 25px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: bold; 
-            margin-top: auto; /* Pushes button to bottom of card */
+            margin-top: auto; 
             align-self: flex-start;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .meme-area { 
@@ -85,7 +87,7 @@
         }
 
         footer { 
-            background-color: #004D40; /* Footer Teal */
+            background-color: #004D40; /* Dark Teal Footer */
             color: white; 
             text-align: center; 
             padding: 30px 20px; 
@@ -98,7 +100,7 @@
 <header>
     <h1>Biotrilance Pte. Ltd.</h1>
     <p>Singapore's Most Serious Biotech Showcase...<br>
-    From ancient remedies to gene therapy and everything in between [cite: 31-33].</p>
+    From ancient remedies to gene therapy and everything in between [cite: 32-33].</p>
 </header>
 
 <nav>
@@ -113,17 +115,17 @@
 <div class="main-container">
     <section class="card">
         <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
-        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies. Clinicians deserve the best (or so I tell myself) [cite: 44-46].</p>
+        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies [cite: 45-46].</p>
         
         <h3>Primary Focus: SGBioPharma 💧</h3>
         <p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films, soothe allergies, and tackle clinical challenges [cite: 48-49].</p>
         
         <h4>Hero Highlight: VisuEVO® 💧</h4>
-        <p>The star for evaporative dry eye – preservative-free magic with Omega-3s, vitamins, and phospholipids to rebuild the lipid layer [cite: 50-51].</p>
+        <p>The star for evaporative dry eye – preservative-free magic with Omega-3s, vitamins, and phospholipids [cite: 50-51].</p>
 
         <div class="meme-area">
             <p><strong>Feeling the burn? Relatable memes incoming:</strong></p>
-            [ SpongeBob Dry Eye Memes Placeholder ]
+            [ SpongeBob Dry Eye Meme ]
         </div>
         <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
     </section>
@@ -136,11 +138,11 @@
         <p>Antibody discovery (finding the needle in the immune haystack 🪡), cell line shenanigans, humanization, and affinity maturation [cite: 69-70].</p>
         
         <h3>Prima Diagnostics – ExactBiofusion® 🧬</h3>
-        <p>Direct 1-step IHC hero: Primary antibody fused directly to HRP. No secondary antibody drama, just high-yield results for frozen and FFPE samples [cite: 74-76].</p>
+        <p>Direct 1-step IHC hero: Primary antibody fused directly to HRP. No secondary antibody drama [cite: 74-76].</p>
 
         <div class="meme-area">
             <p><strong>Lab life in a nutshell:</strong></p>
-            [ Lab Chaos Cartoon Placeholder ]
+            [ Lab Chaos Cartoon ]
         </div>
         <a href="/biotech" class="button">Explore Biotech Innovation 🚀</a>
     </section>
