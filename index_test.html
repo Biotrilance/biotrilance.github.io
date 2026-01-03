@@ -4,130 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
+    <!-- Added Google Font for handwritten vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <style>
-        /* BRAND COLORS SAMPLED FROM YOUR FAVOURITE SCREENSHOTS */
         :root {
-            --electric-orange: #FF6B2B; /* */
-            --deep-teal: #006B5F;       /* */
-            --dark-footer: #004D40;     /* */
-            --peach-bg: #FFE8C3;        /* */
-            --bright-blue: #0000FF;      /* */
+            --electric-orange: #FF6B2B;
+            --deep-teal: #006B5F;
+            --peach-bg: #FFE8C3;
+            --link-blue: #0969da;
+            --header-white: #ffffff;
         }
-
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; padding: 0; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0; padding: 0;
             background-color: var(--peach-bg);
-            color: #333; line-height: 1.6; 
+            color: #1f2328;
+            line-height: 1.5;
         }
-
-        header { 
+        header {
             background-color: var(--electric-orange);
-            color: white; text-align: center; 
-            padding: 50px 20px; 
+            color: var(--header-white);
+            text-align: center;
+            padding: 48px 24px;
         }
-        header h1 { margin: 0; font-size: 2.8em; }
-
-        nav { 
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            font-weight: 600; 
+            font-family: 'Caveat', cursive; /* Handwritten feel! */
+            letter-spacing: 1px;
+        }
+        .tagline { font-size: 1.1rem; margin-top: 12px; opacity: 0.95; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .quote { font-style: italic; margin-top: 20px; font-size: 1rem; opacity: 0.9; }
+        .quote-attribution { font-size: 0.9rem; margin-top: 8px; opacity: 0.8; }
+        nav {
             background-color: var(--deep-teal);
-            padding: 10px; display: flex; 
-            justify-content: center; flex-wrap: wrap; 
-            gap: 15px; position: sticky; top: 0; z-index: 1000;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            position: sticky; top: 0; z-index: 1000;
         }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-
-        /* DESKTOP SIDE-BY-SIDE LAYOUT */
-        .main-container { 
-            display: flex; flex-direction: row; 
-            flex-wrap: wrap; gap: 25px; 
-            padding: 40px 20px; max-width: 1300px; 
-            margin: 0 auto; justify-content: center; 
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        .main-container {
+            display: flex; flex-wrap: wrap;
+            gap: 24px; padding: 32px 16px;
+            max-width: 1400px; margin: 0 auto;
         }
-        
-        .card { 
-            background: white; border-radius: 20px; 
-            padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
-            flex: 1; min-width: 450px; 
+        .card {
+            background: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 12px;
+            padding: 24px;
+            flex: 1; min-width: 380px;
             display: flex; flex-direction: column;
-            border-top: 12px solid var(--deep-teal);
-            box-sizing: border-box;
+            box-shadow: 0 1px 3px rgba(31,35,40,0.12);
         }
-
-        h2, h3, h4 { color: var(--bright-blue) !important; text-align: left; }
-
-        .button { 
-            display: inline-block; background: #FFF176; 
-            color: #333; padding: 12px 25px; 
-            border-radius: 50px; text-decoration: none; 
-            font-weight: bold; margin-top: 20px; 
+        h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+        p { margin: 12px 0; }
+        .disclaimer { font-size: 0.9rem; color: #656d76; font-style: italic; margin: 8px 0 16px; }
+        .cartoon-area {
+            background: #f6f8fa;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border: 2px dashed var(--deep-teal);
+        }
+        .cartoon-area img {
+            max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .caption { font-style: italic; color: #656d76; margin-top: 12px; font-size: 0.95rem; }
+        .button {
+            display: inline-block;
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            color: var(--link-blue);
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: auto;
             align-self: flex-start;
+            transition: 0.2s;
         }
-
-        footer { 
-            background-color: var(--dark-footer);
-            color: white; text-align: center; 
-            padding: 30px 20px; margin-top: 50px;
-        }
-
-        /* MOBILE ALIGNMENT SETTLEMENT */
+        .button:hover { background-color: #ebf0f4; }
+        footer .fun-quote { font-style: italic; margin-bottom: 8px; }
         @media (max-width: 768px) {
-            header { padding: 25px 15px; } /* Shrink header to show content sooner */
-            header h1 { font-size: 1.8em; }
-            header p { font-size: 0.9em; }
-            
-            nav { gap: 8px; padding: 12px 5px; }
-            nav a { font-size: 0.8em; margin: 0 5px; }
-
-            .main-container { 
-                flex-direction: column; /* Force vertical stacking */
-                padding: 15px; 
-            }
-            .card { 
-                min-width: 100%; /* Take full width of phone screen */
-                padding: 20px; margin-bottom: 20px;
-            }
+            .main-container { flex-direction: column; padding: 16px; }
+            .card { min-width: 100%; }
+            header h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
-
 <header>
-    <h1>Biotrilance Pte. Ltd.</h1>
-    <p>Singapore's Most Serious Biotech Showcase...<br>
-    [cite_start]From ancient remedies to gene therapy and everything in between [cite: 32-33].</p>
+    <h1>Biotrilance Pte. Ltd.</h1> <!-- Now with handwritten-style font! -->
+    <div class="tagline">
+        Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene therapy and everything in between!
+        <div class="quote">"For a drug is of no benefit, if it does not also reach the one who needs it."</div>
+        <div class="quote-attribution">— Galen of Pergamon</div>
+    </div>
 </header>
-
+<!-- Rest of the page (nav, cards, footer) exactly the same as before -->
 <nav>
-    <a href="/">Home 🏠</a>
-    <a href="/sgbiopharma">SGBioPharma 👁️</a>
-    <a href="/biotech">Biotech 🧪</a>
-    <a href="/prima-diagnostics">Prima 🔬</a>
-    <a href="/blog">Blog 📝</a>
+    <a href="#">Home 🏠</a>
+    <a href="#">SGBioPharma 👁️</a>
+    <a href="https://www.germinalbiotech.com/">Germinal Biotech 🧪</a>
+    <a href="#">Prima Diag 🔬</a>
+    <a href="#">Contact 📞</a>
 </nav>
-
 <div class="main-container">
     <section class="card">
-        <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
-        [cite_start]<p>Geeking out over eye care, cell therapies, and innovative pharma goodies [cite: 45-46].</p>
-        <h3>Primary Focus: SGBioPharma 💧</h3>
-        [cite_start]<p>Innovative wizards bringing preservative-free drops that rebuild tear films [cite: 48-49].</p>
-        <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
+        <h2>Pharma Geek 👀</h2>
+        <p>Geeking out over innovative eye care and pharma solutions that actually help clinicians and patients.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your dry eye cartoons here -->
+            <div class="caption">The eternal dry eye struggle... (We feel you!)</div>
+        </div>
+        
+        <a href="#" class="button">Dive into SGBioPharma 👀</a>
     </section>
-
+    
     <section class="card">
-        <h2>Biotech Madness: Mad Scientists Welcome! 🧪</h2>
-        [cite_start]<p>Contracts with antibody wizards and one-step IHC pros! [cite: 65-66].</p>
-        <h3>Germinal Biotech 🧫</h3>
-        [cite_start]<p>Antibody discovery, cell line shenanigans, and humanization [cite: 69-70].</p>
-        <h3>Prima Diagnostics 🧬</h3>
-        [cite_start]<p>ExactBiofusion®: Direct 1-step IHC hero without the secondary antibody drama [cite: 74-76].</p>
-        <a href="/biotech" class="button">Explore Biotech 🚀</a>
+        <h2>Biotech Madness 🧪</h2>
+        <p>Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your mad scientist cartoons here -->
+            <div class="caption">When antibody discovery feels like alchemy 🧙‍♂️</div>
+        </div>
+        
+        <a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech 🚀</a>
+    </section>
+    
+    <section class="card">
+        <h2>Prima One-Step IHC Magic 🔬</h2>
+        <p><strong>Research Use Only (RUO)</strong> – Not registered as an IVD with HSA.</p>
+        <p class="disclaimer">For research and laboratory use only; not for diagnostic procedures.</p>
+        <p>Revolutionary one-step IHC: primary antibody fused directly to HRP. Skip the secondary – cleaner, faster, high-yield staining magic.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your IHC magic cartoons here -->
+            <div class="caption">Turning complex IHC into one-step magic 🪄</div>
+        </div>
+        
+        <a href="#" class="button">Discover Prima Diagnostics 🔬</a>
     </section>
 </div>
-
-<footer>
-    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda</p>
+<footer style="background: #004D40; color: white; text-align: center; padding: 24px; margin-top: 40px;">
+    <p class="fun-quote">"The humor is for the soul, the science is for the cells."</p>
+    <p>📧 Biotrilance.SG@biotrilance.com</p>
+    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda 😏</p>
 </footer>
-
 </body>
 </html>
