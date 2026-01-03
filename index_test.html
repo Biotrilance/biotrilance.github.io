@@ -1,23 +1,101 @@
-<section id="pharma-geek">
-  <h2>Pharma Geek: Cool Products, Real Needs 👀</h2>
-  <p style="text-align:center;">From Imaging to Biologics—Innovation that actually helps! [cite: 33, 45]</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Home | Biotrilance</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffccaa, #ffeeee); color: #333; line-height: 1.6; }
+        header { background: #ff6f61; color: white; text-align: center; padding: 30px 20px; }
+        nav { background: #006666; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        
+        /* The "Magic" that puts cards side-by-side */
+        .showcase-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .card { 
+            background: white; 
+            border-radius: 15px; 
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            flex: 1; 
+            min-width: 320px; 
+            text-align: center; 
+        }
 
-  <div class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-    <div style="flex: 1; text-align: left; min-width: 300px;">
-      <h3>SGBioPharma 💧</h3>
-      <p>Beyond eye care, we're geeking out over:</p>
-      <ul>
-        <li><strong>Imaging & Contrast Agents:</strong> Precision diagnostics. [cite: 33]</li>
-        <li><strong>POCT:</strong> Fast results for busy clinicians. [cite: 33]</li>
-        <li><strong>Biologics & Oncology:</strong> Serious science for serious needs. [cite: 33]</li>
-      </ul>
-      <a href="/sgbiopharma" class="button">Explore the Full Portfolio 👀</a>
-    </div>
+        .button { display: inline-block; background: #ffcc00; color: #333; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+        .meme-img { width: 100%; border-radius: 10px; margin-top: 15px; border: 2px solid #eee; }
+        footer { background: #006666; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        
+        h2, h3 { color: #006666; }
+        ul { text-align: left; display: inline-block; }
+    </style>
+</head>
+<body>
 
-    <div style="flex: 1; min-width: 300px;">
-      <p><strong>The Dry Eye Struggle:</strong></p>
-      <img src="your-spongebob-meme.jpg" alt="Dry eye meme" style="width: 100%; border-radius: 10px;">
-      <p><small>Featuring: <strong>VisuEVO®</strong> Lipid layer magic.</small></p>
-    </div>
-  </div>
-</section>
+<header>
+    <h1>Biotrilance Pte. Ltd.</h1>
+    <p>Singapore's Most Serious Biotech Showcase... with a sense of humor.</p>
+</header>
+
+<nav>
+    <a href="/">Home 🏠</a>
+    <a href="/sgbiopharma">SGBioPharma 👁️</a>
+    <a href="/blog">Blog 📝</a>
+    <a href="#contact">Contact 📞</a>
+</nav>
+
+<div class="showcase-container">
+    
+    <section class="card">
+        <h2>Pharma Geek 👀</h2>
+        <p><i>Geeking out over real clinical needs.</i></p>
+        
+        <div style="background: #f0f7f7; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
+            <p><strong>SGBioPharma Focus:</strong></p>
+            <ul>
+                <li>Imaging & Contrast Agents 📸</li>
+                <li>POCT & Diagnostics ⏱️</li>
+                <li>Biologics & Oncology 🧬</li>
+                <li>Innovative Eye Care 💧</li>
+            </ul>
+        </div>
+
+        <p><strong>The Dry Eye Struggle:</strong></p>
+        <img src="https://via.placeholder.com/400x300?text=SpongeBob+Dry+Eyes+Meme" alt="Dry eye meme" class="meme-img">
+        <p><small>Hero: <strong>VisuEVO®</strong> Lipid layer magic [cite: 50-51].</small></p>
+
+        <a href="/sgbiopharma" class="button">Explore the Full Lab 👀</a>
+    </section>
+
+    <section class="card">
+        <h2>Biotech Madness 🧪</h2>
+        <p><i>"Finding the needle in the immune haystack"[cite: 70].</i></p>
+
+        <div style="text-align: left; margin: 15px 0;">
+            <p>🧫 <strong><a href="https://www.germinalbiotech.com/">Germinal Biotech</a></strong>: Antibody discovery wizards[cite: 69].</p>
+            <p>🧬 <strong><a href="/prima-diagnostics">Prima Diagnostics</a></strong>: 1-step IHC magic [cite: 74-75].</p>
+        </div>
+
+        <p><strong>Lab Life Reality:</strong></p>
+        <img src="https://via.placeholder.com/400x300?text=Lab+Chaos+Cartoon" alt="Lab madness meme" class="meme-img">
+        
+        <a href="/biotech" class="button">Explore Lab Stuff 🚀</a>
+    </section>
+
+</div>
+
+<footer id="contact">
+    <h3>Contact: Drop Me a Line</h3>
+    <p>Email: Biotrilance.SG@biotrilance.com [cite: 89]</p>
+</footer>
+
+</body>
+</html>
