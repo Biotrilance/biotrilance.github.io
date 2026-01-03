@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <title>Biotrilance | Science & Soul</title>
     <style>
-        :root { --primary: #006666; --accent: #ff6f61; --silver: #C0C0C0; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fdf2e9; color: #333; }
-        
-        /* Header with Silver Maturity */
-        header { background: white; text-align: center; padding: 20px; border-bottom: 4px solid var(--silver); }
-        .logo-main { max-width: 300px; height: auto; }
-        .chinese-name { font-size: 2em; color: var(--primary); margin-top: 10px; font-weight: bold; }
+        /* Restoring your exact color palette from the screenshot */
+        :root { 
+            --header-bg: #ff6f61; /* The Coral Color */
+            --nav-bg: #006666;    /* The Dark Teal */
+            --page-bg: #fdf2e9;   /* The Peach Background */
+            --silver: #C0C0C0; 
+        }
 
-        nav { background: var(--primary); padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
-
-        .container { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--page-bg); color: #333; }
         
-        .card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); flex: 1; min-width: 320px; border-top: 5px solid var(--primary); }
-        .badge { background: #e0f2f1; color: var(--primary); padding: 4px 12px; border-radius: 4px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; }
-        
-        .button { display: block; background: #ffcc00; color: #222; padding: 12px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; text-align: center; }
-        .meme-placeholder { background: #f9f9f9; border: 1px dashed #ccc; padding: 20px; margin: 15px 0; border-radius: 8px; font-style: italic; }
+        header { background: var(--header-bg); color: white; text-align: center; padding: 40px 20px; }
+        .logo-main { max-width: 350px; height: auto; margin-bottom: 10px; }
+        .chinese-name { font-size: 2.5em; font-weight: bold; display: block; margin-top: 10px; }
 
-        /* Resilience Section */
-        .evolution { background: #f4f4f4; padding: 40px 20px; text-align: center; border-top: 1px solid #ddd; }
-        .logo-grid { display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 20px; }
-        .evolution-img { height: 60px; opacity: 0.7; filter: grayscale(50%); transition: 0.3s; }
-        .evolution-img:hover { opacity: 1; filter: grayscale(0%); }
+        nav { background: var(--nav-bg); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+        .container { display: flex; flex-wrap: wrap; gap: 25px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+        
+        /* Matching your card style exactly */
+        .card { 
+            background: white; 
+            border-radius: 20px; 
+            padding: 30px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
+            flex: 1; 
+            min-width: 320px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+        }
+
+        .badge { background: #e0f2f1; color: var(--nav-bg); padding: 5px 12px; border-radius: 6px; font-size: 0.75em; font-weight: bold; align-self: flex-start; margin-bottom: 15px; }
+        
+        h2 { color: var(--nav-bg); border-bottom: 2px solid var(--header-bg); padding-bottom: 10px; margin-top: 0; }
+        
+        .button { display: block; background: #ffcc00; color: #222; padding: 15px; border-radius: 40px; text-decoration: none; font-weight: bold; margin-top: 20px; text-align: center; font-size: 1.1em; }
+        
+        /* The Evolution Section */
+        .evolution { background: white; padding: 50px 20px; text-align: center; margin-top: 40px; border-top: 5px solid var(--silver); }
+        .logo-grid { display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 30px; flex-wrap: wrap; }
+        .evolution-img { height: 80px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1)); }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="silver_logo.jpg" alt="Biotrilance Silver Logo" class="logo-main">
-    <div class="chinese-name">生物圣槊</div>
+    <img src="生物圣槊 定稿_画板 1 crop.jpg" alt="Biotrilance Silver Logo" class="logo-main">
     <p>Scientific Innovation & Knowledge Sharing — From Lab Bench to Bedside.</p>
 </header>
 
@@ -47,48 +64,47 @@
 
 <div class="container">
     <section class="card">
-        <span class="badge">Clinical Solutions</span>
-        <h2>Pharma Geek 👁️‍🗨️</h2>
-        <p>Expertise in specialty therapeutics and precision diagnostics.</p>
-        <ul style="padding-left: 20px;">
-            <li><strong>Imaging:</strong> Next-gen contrast agents.</li>
-            <li><strong>Biologics:</strong> Advanced therapeutic pathways.</li>
-            <li><strong>Ophthalmology:</strong> Rebuilding the lipid layer.</li>
-        </ul>
-        <div class="meme-placeholder">[ Insert SpongeBob Dry Eye Meme Here ]</div>
-        <p style="font-size: 0.9em; color: #666;"><i>"The humor is for the soul, the science is for the cells."</i></p>
-        <a href="/sgbiopharma" class="button">Clinical Data & Products</a>
+        <div>
+            <span class="badge">Clinical Solutions</span>
+            <h2>Pharma Geek 👁️‍🗨️</h2>
+            <p>Knowledge sharing on specialty pharma and diagnostics.</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Imaging:</strong> Next-gen contrast agents.</li>
+                <li><strong>Biologics:</strong> Advanced therapeutic pathways.</li>
+                <li><strong>POCT:</strong> Evidence-based rapid diagnostics.</li>
+                <li><strong>Ophthalmology:</strong> Rebuilding the lipid layer.</li>
+            </ul>
+            <p style="background: #f9f9f9; padding: 15px; border-radius: 10px; font-style: italic; border: 1px dashed #ccc;">[ Insert SpongeBob Meme Here ]</p>
+            <p style="font-size: 0.95em; color: #555;"><i>"The humor is for the soul, the science is for the cells."</i></p>
+        </div>
+        <a href="/sgbiopharma" class="button">Clinical Data & Products 👁️‍🗨️</a>
     </section>
 
     <section class="card">
-        <span class="badge">Research & R&D</span>
-        <h2>Biotech Madness 🧪</h2>
-        <p>Strategic R&D partnerships with global innovators.</p>
-        <p><strong>Germinal Biotech:</strong> Antibody discovery and affinity maturation.</p>
-        <p><strong>Prima Diagnostics:</strong> ExactBiofusion® 1-step IHC.</p>
-        <div class="meme-placeholder">[ Insert Lab Chaos Meme Here ]</div>
-        <a href="/biotech" class="button">Explore Lab Innovation</a>
+        <div>
+            <span class="badge">Research & R&D</span>
+            <h2>Biotech Madness 🧪</h2>
+            <p>Partnering with antibody wizards and IHC innovators.</p>
+            <p>🧬 <strong>Germinal Biotech:</strong> Antibody discovery and affinity maturation.</p>
+            <p>💉 <strong>Prima Diagnostics:</strong> ExactBiofusion® 1-step IHC.</p>
+            <p style="background: #f9f9f9; padding: 15px; border-radius: 10px; font-style: italic; border: 1px dashed #ccc;">[ Insert Lab Madness Meme Here ]</p>
+        </div>
+        <a href="/biotech" class="button">Explore Lab Innovation 🚀</a>
     </section>
 </div>
 
 <section class="evolution">
     <h3>Our Journey of Perseverance</h3>
-    <p>From the initial spark (Orange) to the metallic strength of maturity (Silver) — navigating harsh economic environments with scientific resolve.</p>
+    <p>Navigating harsh economic environments with scientific resolve—maturing from the initial spark to metallic strength.</p>
     <div class="logo-grid">
-        <div>
-            <img src="orange_logo.png" class="evolution-img" alt="Early Days">
-            <p><small>The Spark</small></p>
-        </div>
-        <div style="font-size: 2em; color: var(--silver);">➡️</div>
-        <div>
-            <img src="silver_logo.jpg" class="evolution-img" alt="Maturity">
-            <p><small>The Perseverance</small></p>
-        </div>
+        <img src="orange_logo.png" class="evolution-img" alt="The Spark (Orange)">
+        <span style="font-size: 2em; color: var(--silver);">➡️</span>
+        <img src="生物圣槊 定稿_画板 1 crop.jpg" class="evolution-img" alt="The Perseverance (Silver)">
     </div>
 </section>
 
 <footer>
-    <p style="text-align: center; padding: 20px; color: #666;">© Biotrilance Pte. Ltd. | Biotrilance.SG@biotrilance.com</p>
+    <p style="text-align: center; padding: 30px; color: #888;">© Biotrilance Pte. Ltd. | Biotrilance.SG@biotrilance.com</p>
 </footer>
 
 </body>
