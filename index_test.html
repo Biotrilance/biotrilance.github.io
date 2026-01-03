@@ -5,44 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
     <style>
-        /* COLOR PALETTE RESTORATION */
+        /* BRAND COLORS SAMPLED FROM YOUR FAVOURITE SCREENSHOTS */
+        :root {
+            --electric-orange: #FF6B2B; /* */
+            --deep-teal: #006B5F;       /* */
+            --dark-footer: #004D40;     /* */
+            --peach-bg: #FFE8C3;        /* */
+            --bright-blue: #0000FF;      /* */
+        }
+
         body { 
             font-family: Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background-color: #FFE8C3; /* Rich Peach Background */
+            background-color: var(--peach-bg);
             color: #333; 
             line-height: 1.6; 
         }
 
         header { 
-            background-color: #FF6B2B; /* Electric Orange */
+            background-color: var(--electric-orange);
             color: white; 
             text-align: center; 
             padding: 50px 20px; 
         }
         header h1 { margin: 0; font-size: 2.8em; }
 
+        /* NAVIGATION: Fixed for Mobile Overlap */
         nav { 
-            background-color: #006B5F; /* Deep Teal */
-            padding: 15px; 
-            text-align: center; 
-            position: sticky; 
-            top: 0; 
+            background-color: var(--deep-teal);
+            padding: 10px; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; /* Allows links to stack on mobile */
+            gap: 15px;
+            position: sticky;
+            top: 0;
             z-index: 1000;
         }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1em; }
 
-        /* TYPOGRAPHY */
-        h2, h3, h4 { 
-            color: #0000FF !important; /* Bright Blue Section Titles */
-            text-align: left; 
-            margin-top: 10px;
-        }
-
-        /* SIDE-BY-SIDE LAYOUT ENGINE */
+        /* SIDE-BY-SIDE GRID: Responsive Flexbox */
         .main-container { 
             display: flex; 
+            flex-direction: row; /* Desktop Default */
             flex-wrap: wrap; 
             gap: 25px; 
             padding: 40px 20px; 
@@ -57,22 +63,28 @@
             padding: 30px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
             flex: 1; 
-            min-width: 450px; 
-            max-width: 600px;
+            min-width: 400px; /* Snaps to column if screen < 800px */
             display: flex;
             flex-direction: column;
-            border-top: 10px solid #006B5F; /* Teal Accent Bar */
+            border-top: 12px solid var(--deep-teal);
+            box-sizing: border-box;
+        }
+
+        h2, h3, h4 { 
+            color: var(--bright-blue) !important; 
+            text-align: left; 
+            margin-top: 10px;
         }
 
         .button { 
             display: inline-block; 
-            background: #FFF176; /* Yellow CTA [cite: 19] */
+            background: #FFF176; 
             color: #333; 
             padding: 12px 25px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: bold; 
-            margin-top: auto; 
+            margin-top: 20px; 
             align-self: flex-start;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
@@ -87,11 +99,21 @@
         }
 
         footer { 
-            background-color: #004D40; /* Dark Teal Footer */
+            background-color: var(--dark-footer);
             color: white; 
             text-align: center; 
             padding: 30px 20px; 
             margin-top: 50px;
+        }
+
+        /* MOBILE FIXES: Triggered for screens smaller than 768px */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8em; }
+            header p { font-size: 0.9em; }
+            .main-container { flex-direction: column; padding: 20px 15px; }
+            .card { min-width: 100%; padding: 20px; }
+            nav { gap: 8px; }
+            nav a { font-size: 0.85em; }
         }
     </style>
 </head>
@@ -100,7 +122,7 @@
 <header>
     <h1>Biotrilance Pte. Ltd.</h1>
     <p>Singapore's Most Serious Biotech Showcase...<br>
-    From ancient remedies to gene therapy and everything in between [cite: 32-33].</p>
+    From ancient remedies to gene therapy and everything in between.</p>
 </header>
 
 <nav>
@@ -115,42 +137,13 @@
 <div class="main-container">
     <section class="card">
         <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
-        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies [cite: 45-46].</p>
+        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies.</p>
         
         <h3>Primary Focus: SGBioPharma 💧</h3>
-        <p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films, soothe allergies, and tackle clinical challenges [cite: 48-49].</p>
+        <p>Innovative wizards bringing preservative-free drops that rebuild tear films and soothe allergies.</p>
         
         <h4>Hero Highlight: VisuEVO® 💧</h4>
-        <p>The star for evaporative dry eye – preservative-free magic with Omega-3s, vitamins, and phospholipids [cite: 50-51].</p>
+        <p>The star for evaporative dry eye – magic with Omega-3s and phospholipids to rebuild the lipid layer.</p>
 
-        <div class="meme-area">
-            <p><strong>Feeling the burn? Relatable memes incoming:</strong></p>
-            [ SpongeBob Dry Eye Meme ]
-        </div>
-        <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
-    </section>
-
-    <section class="card">
-        <h2>Biotech Madness: Mad Scientists Welcome! 🧪</h2>
-        <p>Contracts with antibody wizards, one-step IHC pros, and whoever else joins the chaos! Researchers, prepare for awareness overload! 🚀 [cite: 65-67].</p>
-        
-        <h3>Germinal Biotech 🧫</h3>
-        <p>Antibody discovery (finding the needle in the immune haystack 🪡), cell line shenanigans, humanization, and affinity maturation [cite: 69-70].</p>
-        
-        <h3>Prima Diagnostics – ExactBiofusion® 🧬</h3>
-        <p>Direct 1-step IHC hero: Primary antibody fused directly to HRP. No secondary antibody drama [cite: 74-76].</p>
-
-        <div class="meme-area">
-            <p><strong>Lab life in a nutshell:</strong></p>
-            [ Lab Chaos Cartoon ]
-        </div>
-        <a href="/biotech" class="button">Explore Biotech Innovation 🚀</a>
-    </section>
-</div>
-
-<footer>
-    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda</p>
-</footer>
-
-</body>
-</html>
+        <div class="meme-area"> [ SpongeBob Dry Eye Meme ] </div>
+        <a href="/sgbi
