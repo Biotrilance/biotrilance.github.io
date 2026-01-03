@@ -5,84 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
     <style>
-        /* BRAND COLORS */
+        /* BRAND COLORS SAMPLED FROM YOUR FAVOURITE SCREENSHOTS */
         :root {
-            --orange: #FF6B2B;
-            --teal: #006B5F;
-            --bg: #FFE8C3;
-            --blue: #0000FF;
+            --electric-orange: #FF6B2B; /* */
+            --deep-teal: #006B5F;       /* */
+            --dark-footer: #004D40;     /* */
+            --peach-bg: #FFE8C3;        /* */
+            --bright-blue: #0000FF;      /* */
         }
 
         body { 
             font-family: Arial, sans-serif; 
             margin: 0; padding: 0; 
-            background-color: var(--bg); 
-            color: #333;
+            background-color: var(--peach-bg);
+            color: #333; line-height: 1.6; 
         }
 
         header { 
-            background-color: var(--orange); 
-            color: white; 
-            text-align: center; 
-            padding: 40px 20px; /* Reduced from 60px */
+            background-color: var(--electric-orange);
+            color: white; text-align: center; 
+            padding: 50px 20px; 
         }
+        header h1 { margin: 0; font-size: 2.8em; }
 
         nav { 
-            background-color: var(--teal); 
-            padding: 10px; 
-            display: flex; 
-            justify-content: center; 
-            flex-wrap: wrap; 
-            gap: 10px;
-            position: sticky; top: 0; z-index: 1000;
+            background-color: var(--deep-teal);
+            padding: 10px; display: flex; 
+            justify-content: center; flex-wrap: wrap; 
+            gap: 15px; position: sticky; top: 0; z-index: 1000;
         }
-        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
 
-        /* THE CONTAINER - Crucial for scrolling */
+        /* DESKTOP SIDE-BY-SIDE LAYOUT */
         .main-container { 
-            display: flex; 
-            flex-direction: row; 
-            flex-wrap: wrap; 
-            gap: 20px; 
-            padding: 20px; 
-            max-width: 1200px; 
-            margin: 0 auto;
-            height: auto; /* Ensures it grows with content */
+            display: flex; flex-direction: row; 
+            flex-wrap: wrap; gap: 25px; 
+            padding: 40px 20px; max-width: 1300px; 
+            margin: 0 auto; justify-content: center; 
         }
         
         .card { 
-            background: white; 
-            border-radius: 20px; 
-            padding: 25px; 
-            flex: 1; 
-            min-width: 450px; 
-            border-top: 10px solid var(--teal);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
+            background: white; border-radius: 20px; 
+            padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+            flex: 1; min-width: 450px; 
+            display: flex; flex-direction: column;
+            border-top: 12px solid var(--deep-teal);
+            box-sizing: border-box;
         }
 
-        h2, h3, h4 { color: var(--blue) !important; text-align: left; }
+        h2, h3, h4 { color: var(--bright-blue) !important; text-align: left; }
 
         .button { 
-            display: inline-block; 
-            background: #FFF176; 
-            padding: 10px 20px; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            margin-top: 20px;
+            display: inline-block; background: #FFF176; 
+            color: #333; padding: 12px 25px; 
+            border-radius: 50px; text-decoration: none; 
+            font-weight: bold; margin-top: 20px; 
             align-self: flex-start;
         }
 
-        footer { background: #004D40; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        footer { 
+            background-color: var(--dark-footer);
+            color: white; text-align: center; 
+            padding: 30px 20px; margin-top: 50px;
+        }
 
-        /* MOBILE OVERRIDE */
+        /* MOBILE ALIGNMENT SETTLEMENT */
         @media (max-width: 768px) {
-            header { padding: 20px 10px; } /* Shrink header to show content sooner */
-            header h1 { font-size: 1.5em; }
-            .main-container { flex-direction: column; } /* Stacks cards vertically */
-            .card { min-width: 100%; margin-bottom: 20px; } /* Full width cards */
+            header { padding: 25px 15px; } /* Shrink header to show content sooner */
+            header h1 { font-size: 1.8em; }
+            header p { font-size: 0.9em; }
+            
+            nav { gap: 8px; padding: 12px 5px; }
+            nav a { font-size: 0.8em; margin: 0 5px; }
+
+            .main-container { 
+                flex-direction: column; /* Force vertical stacking */
+                padding: 15px; 
+            }
+            .card { 
+                min-width: 100%; /* Take full width of phone screen */
+                padding: 20px; margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -90,7 +93,8 @@
 
 <header>
     <h1>Biotrilance Pte. Ltd.</h1>
-    <p>Singapore's Most Serious Biotech Showcase...</p>
+    <p>Singapore's Most Serious Biotech Showcase...<br>
+    [cite_start]From ancient remedies to gene therapy and everything in between [cite: 32-33].</p>
 </header>
 
 <nav>
@@ -106,7 +110,7 @@
         <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
         [cite_start]<p>Geeking out over eye care, cell therapies, and innovative pharma goodies [cite: 45-46].</p>
         <h3>Primary Focus: SGBioPharma 💧</h3>
-        [cite_start]<p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films [cite: 48-49].</p>
+        [cite_start]<p>Innovative wizards bringing preservative-free drops that rebuild tear films [cite: 48-49].</p>
         <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
     </section>
 
