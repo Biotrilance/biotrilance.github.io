@@ -5,39 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
     <style>
-        /* Restoring original color scheme and fonts */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffccaa, #ffeeee); color: #333; line-height: 1.6; }
-        header { background: #ff6f61; color: white; text-align: center; padding: 40px 20px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        nav { background: #006666; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-
-        /* Side-by-Side Container */
-        .main-container { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; justify-content: center; }
-        
-        /* Restoring Original Card Style */
-        .card { 
-            background: white; 
-            border-radius: 15px; 
-            padding: 25px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-            flex: 1; 
-            min-width: 350px; 
-            max-width: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        /* COLORS SAMPLED FROM YOUR FAVORITE SCREENSHOTS */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #FFE8C3; /* Peach background */
+            color: #333; 
+            line-height: 1.6; 
         }
 
-        h2 { text-align: center; font-size: 1.8em; color: #333; }
-        h3, h4 { color: #006666; margin-top: 10px; }
-        
-        .button { display: block; background: #ffcc00; color: #333; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 20px auto 0; text-align: center; }
-        .button:hover { background: #ffdd33; }
+        header { 
+            background-color: #FF6B2B; /* Electric Orange */
+            color: white; 
+            text-align: center; 
+            padding: 50px 20px; 
+        }
 
-        .meme-placeholder { background: #f9f9f9; border: 1px dashed #ccc; padding: 15px; border-radius: 10px; margin: 15px 0; text-align: center; font-style: italic; color: #777; }
-        footer { background: #006666; color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
+        nav { 
+            background-color: #006B5F; /* Teal Nav */
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+        }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+        /* BLUE TITLES FROM YOUR MASTER CSS */
+        h2, h3, h4 { 
+            color: #0000FF !important; 
+            text-align: left; 
+            margin-top: 10px;
+        }
+
+        /* SIDE-BY-SIDE GRID SYSTEM */
+        .main-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 25px; 
+            padding: 40px 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            justify-content: center; 
+        }
+        
+        .card { 
+            background: white; 
+            border-radius: 20px; 
+            padding: 30px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            flex: 1; 
+            min-width: 450px; 
+            max-width: 580px;
+            display: flex;
+            flex-direction: column;
+            border-top: 10px solid #006B5F;
+        }
+
+        .button { 
+            display: inline-block; 
+            background: #FFF176; /* Yellow button */
+            color: #333; 
+            padding: 12px 25px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: auto; /* Pushes button to bottom of card */
+            align-self: flex-start;
+        }
+
+        .meme-area { 
+            background: #fdfdfd; 
+            border: 2px dashed #009688; 
+            border-radius: 15px; 
+            padding: 15px; 
+            margin: 20px 0; 
+            text-align: center; 
+        }
+
+        footer { 
+            background-color: #004D40; /* Footer Teal */
+            color: white; 
+            text-align: center; 
+            padding: 30px 20px; 
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -58,50 +111,43 @@
 </nav>
 
 <div class="main-container">
-    
     <section class="card">
-        <div>
-            <h2>Pharma Geek 👀</h2>
-            <p style="text-align:center;">Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies [cite: 44-46].</p>
-            
-            <h3>Primary Focus: SGBioPharma 💧</h3>
-            <p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films, soothe allergies, and tackle clinical challenges [cite: 48-49].</p>
-            
-            <h4>Hero Highlight: VisuEVO® 💧</h4>
-            <p>The star for evaporative dry eye – preservative-free magic with Omega-3s, vitamins, and phospholipids to rebuild the lipid layer [cite: 50-51].</p>
+        <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
+        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies. Clinicians deserve the best (or so I tell myself) [cite: 44-46].</p>
+        
+        <h3>Primary Focus: SGBioPharma 💧</h3>
+        <p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films, soothe allergies, and tackle clinical challenges [cite: 48-49].</p>
+        
+        <h4>Hero Highlight: VisuEVO® 💧</h4>
+        <p>The star for evaporative dry eye – preservative-free magic with Omega-3s, vitamins, and phospholipids to rebuild the lipid layer [cite: 50-51].</p>
 
-            <div class="meme-placeholder">
-                <p><strong>Relatable memes incoming:</strong></p>
-                [ SpongeBob Dry Eye Memes ]
-            </div>
+        <div class="meme-area">
+            <p><strong>Feeling the burn? Relatable memes incoming:</strong></p>
+            [ SpongeBob Dry Eye Memes Placeholder ]
         </div>
         <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
     </section>
 
     <section class="card">
-        <div>
-            <h2>Biotech Madness 🧪</h2>
-            <p style="text-align:center;">Contracts with antibody wizards, one-step IHC pros, and whoever else joins the chaos! [cite: 65-67].</p>
-            
-            <h3>Germinal Biotech 🧫</h3>
-            <p>Antibody discovery (finding the needle in the immune haystack 🪡), cell line shenanigans, humanization, and affinity maturation [cite: 69-70].</p>
-            
-            <h3>Prima Diagnostics – ExactBiofusion® 🧬</h3>
-            <p>Direct 1-step IHC hero: Primary antibody fused directly to HRP. No secondary antibody drama, just high-yield results for frozen and FFPE samples [cite: 74-76].</p>
+        <h2>Biotech Madness: Mad Scientists Welcome! 🧪</h2>
+        <p>Contracts with antibody wizards, one-step IHC pros, and whoever else joins the chaos! Researchers, prepare for awareness overload! 🚀 [cite: 65-67].</p>
+        
+        <h3>Germinal Biotech 🧫</h3>
+        <p>Antibody discovery (finding the needle in the immune haystack 🪡), cell line shenanigans, humanization, and affinity maturation [cite: 69-70].</p>
+        
+        <h3>Prima Diagnostics – ExactBiofusion® 🧬</h3>
+        <p>Direct 1-step IHC hero: Primary antibody fused directly to HRP. No secondary antibody drama, just high-yield results for frozen and FFPE samples [cite: 74-76].</p>
 
-            <div class="meme-placeholder">
-                <p><strong>Lab life in a nutshell:</strong></p>
-                [ Lab Madness Memes ]
-            </div>
+        <div class="meme-area">
+            <p><strong>Lab life in a nutshell:</strong></p>
+            [ Lab Chaos Cartoon Placeholder ]
         </div>
         <a href="/biotech" class="button">Explore Biotech Innovation 🚀</a>
     </section>
-
 </div>
 
-<footer id="contact">
-    <h2>Contact: Drop Me a Line</h2>
-    <p>Email: Biotrilance.SG@biotrilance.com [cite: 88-89]</p>
+<footer>
+    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda</p>
 </footer>
 
 </body>
