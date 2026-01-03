@@ -1,67 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Biotrilance Pte. Ltd.</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffccaa, #ffeeee); color: #333; line-height: 1.6; }
-        header { background: #ff6f61; color: white; text-align: center; padding: 30px 20px; }
-        nav { background: #006666; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
-        section { padding: 20px; max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); flex: 1; min-width: 300px; max-width: 450px; text-align: center; }
-        h2, h3 { color: #006666; margin-top: 0; }
-        .button { display: inline-block; background: #ffcc00; color: #333; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; }
-        .product-img { width: 120px; height: auto; margin-bottom: 10px; }
-        .meme-small { width: 100%; max-width: 250px; border-radius: 8px; margin-top: 10px; }
-        footer { background: #006666; color: white; text-align: center; padding: 20px; margin-top: 20px; }
-        .biotech-links { text-align: left; display: inline-block; margin-top: 10px; }
-        .biotech-links a { color: #006666; font-weight: bold; text-decoration: underline; }
-    </style>
-</head>
-<body>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
 
-<header>
-    <h1>Biotrilance Pte. Ltd.</h1>
-    <p>Singapore's Most Serious Biotech Showcase... for real innovation that actually helps! [cite: 31, 32, 33]</p>
-</header>
-
-<nav>
-    <a href="/">Home 🏠</a>
-    <a href="/sgbiopharma">SGBioPharma 👁️</a>
-    <a href="/blog">Blog 📝</a>
-    <a href="#contact">Contact 📞</a>
-</nav>
-
-<section>
-    <div class="card">
-        <h2>Pharma Geek 👀</h2>
-        <p>Innovative eye care and preservative-free solutions. [cite: 44, 45, 49]</p>
+    <section style="flex: 1; min-width: 320px; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+        <h2>Pharma Geek 💧</h2>
+        <p><i>The "Dry Eye" Struggle is Real.</i></p>
         
-        <img src="https://via.placeholder.com/300x400?text=VisuEVO+Bottle" alt="VisuEVO®" class="product-img"> <p><strong>Feeling the burn?</strong></p>
-        <img src="https://via.placeholder.com/400x300?text=SpongeBob+Meme" alt="Dry eye meme" class="meme-small"> <br>
-        <a href="/sgbiopharma" class="button">Explore SGBioPharma 💧</a> </div>
+        <img src="visuevo-bottle.jpg" alt="VisuEVO" style="width: 120px; margin-bottom: 10px;">
+        
+        <div style="margin: 10px 0;">
+            <img src="YOUR_MEME_URL_HERE" alt="Funny Meme" style="width: 100%; border-radius: 10px; border: 2px solid #ff6f61;">
+        </div>
+        
+        <p>Focus: VisuEVO® - Lipid layer rebuild & hydration.</p>
+        <a href="/sgbiopharma" class="button" style="background: #ffcc00; padding: 10px 20px; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold;">Explore SGBioPharma 👀</a>
+    </section>
 
-    <div class="card">
+    <section style="flex: 1; min-width: 320px; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
         <h2>Biotech Madness 🧪</h2>
-        <p>Contracts with antibody wizards and IHC pros. [cite: 65, 66]</p>
-        
-        <div class="biotech-links">
-            <p>🧫 <strong><a href="https://www.germinalbiotech.com/">Germinal Biotech</a></strong>: Finding the needle in the immune haystack. [cite: 70, 71]</p>
-            <p>🧬 <strong><a href="/prima-diagnostics">Prima Diagnostics</a></strong>: 1-step IHC magic with ExactBiofusion®. [cite: 74, 75, 77]</p>
+        <p><i>"Finding the needle in the immune haystack."</i></p>
+
+        <div style="text-align: left; margin: 15px 0; background: #f9f9f9; padding: 10px; border-radius: 8px;">
+            <p>🧫 <strong><a href="https://www.germinalbiotech.com/" style="color: #006666;">Germinal Biotech</a></strong>: Antibody Discovery</p>
+            <p>🧬 <strong><a href="/prima-diagnostics" style="color: #006666;">Prima Diagnostic</a></strong>: 1-step IHC Magic</p>
         </div>
 
-        <p><em>Lab life in a nutshell:</em></p>
-        <img src="https://via.placeholder.com/500x300?text=Lab+Chaos" alt="Lab madness" class="meme-small"> <br>
-        <a href="/biotech-madness" class="button">Explore Lab Stuff 🚀</a>
-    </div>
-</section>
+        <div style="margin: 10px 0;">
+            <img src="YOUR_LAB_MEME_URL_HERE" alt="Lab Chaos" style="width: 100%; border-radius: 10px; border: 2px solid #006666;">
+        </div>
+        
+        <a href="/biotech-madness" class="button" style="background: #ffcc00; padding: 10px 20px; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold;">Explore Lab Stuff 🚀</a>
+    </section>
 
-<footer id="contact">
-    <h3>Contact: Drop Me a Line</h3>
-    <p>Email: Biotrilance.SG@biotrilance.com [cite: 88, 89]</p>
+</div>
+
+<footer id="contact" style="text-align: center; padding: 20px; background: #006666; color: white; border-radius: 15px; margin: 20px;">
+    <h3>Let's Talk Science!</h3>
+    <p>📧 Biotrilance.SG@biotrilance.com</p>
 </footer>
-
-</body>
-</html>
