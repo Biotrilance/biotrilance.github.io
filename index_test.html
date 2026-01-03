@@ -2,56 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Biotrilance | Science & Soul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Home | Biotrilance</title>
     <style>
-        /* Restoring your exact color palette from the screenshot */
-        :root { 
-            --header-bg: #ff6f61; /* The Coral Color */
-            --nav-bg: #006666;    /* The Dark Teal */
-            --page-bg: #fdf2e9;   /* The Peach Background */
-            --silver: #C0C0C0; 
-        }
-
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--page-bg); color: #333; }
-        
-        header { background: var(--header-bg); color: white; text-align: center; padding: 40px 20px; }
-        .logo-main { max-width: 350px; height: auto; margin-bottom: 10px; }
-        .chinese-name { font-size: 2.5em; font-weight: bold; display: block; margin-top: 10px; }
-
-        nav { background: var(--nav-bg); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffccaa, #ffeeee); color: #333; line-height: 1.6; }
+        header { background: #ff6f61; color: white; text-align: center; padding: 30px 20px; border-bottom: 5px solid #006666; }
+        nav { background: #006666; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        
+        .showcase-container { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: space-between; }
 
-        .container { display: flex; flex-wrap: wrap; gap: 25px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+        .science-badge { background: #e0f2f1; color: #006666; padding: 5px 10px; border-radius: 5px; font-size: 0.8em; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .button { display: inline-block; background: #ffcc00; color: #333; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; text-align: center; }
+        .meme-img { width: 100%; border-radius: 10px; margin: 15px 0; border: 1px solid #ddd; }
+        footer { background: #006666; color: white; text-align: center; padding: 30px; margin-top: 40px; }
         
-        /* Matching your card style exactly */
-        .card { 
-            background: white; 
-            border-radius: 20px; 
-            padding: 30px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
-            flex: 1; 
-            min-width: 320px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-        }
-
-        .badge { background: #e0f2f1; color: var(--nav-bg); padding: 5px 12px; border-radius: 6px; font-size: 0.75em; font-weight: bold; align-self: flex-start; margin-bottom: 15px; }
-        
-        h2 { color: var(--nav-bg); border-bottom: 2px solid var(--header-bg); padding-bottom: 10px; margin-top: 0; }
-        
-        .button { display: block; background: #ffcc00; color: #222; padding: 15px; border-radius: 40px; text-decoration: none; font-weight: bold; margin-top: 20px; text-align: center; font-size: 1.1em; }
-        
-        /* The Evolution Section */
-        .evolution { background: white; padding: 50px 20px; text-align: center; margin-top: 40px; border-top: 5px solid var(--silver); }
-        .logo-grid { display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 30px; flex-wrap: wrap; }
-        .evolution-img { height: 80px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1)); }
+        h2 { color: #006666; border-bottom: 2px solid #ff6f61; padding-bottom: 10px; }
+        ul { text-align: left; padding-left: 20px; }
+        .evidence-link { font-size: 0.85em; color: #006666; text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="生物圣槊 定稿_画板 1 crop.jpg" alt="Biotrilance Silver Logo" class="logo-main">
+    <h1>Biotrilance Pte. Ltd.</h1>
     <p>Scientific Innovation & Knowledge Sharing — From Lab Bench to Bedside.</p>
 </header>
 
@@ -59,52 +34,58 @@
     <a href="/">Home 🏠</a>
     <a href="/sgbiopharma">SGBioPharma 👁️</a>
     <a href="/biotech">Lab Innovation 🧪</a>
-    <a href="/evidence">Evidence 📝</a>
+    <a href="/blog">Evidence & Blog 📝</a>
+    <a href="#contact">Contact 📞</a>
 </nav>
 
-<div class="container">
+<div class="showcase-container">
+    
     <section class="card">
         <div>
-            <span class="badge">Clinical Solutions</span>
-            <h2>Pharma Geek 👁️‍🗨️</h2>
+            <span class="science-badge">CLINICAL SOLUTIONS</span>
+            <h2>Pharma Geek 👀</h2>
             <p>Knowledge sharing on specialty pharma and diagnostics.</p>
-            <ul style="padding-left: 20px;">
+            
+            <p><strong>SGBioPharma Portfolio:</strong></p>
+            <ul>
                 <li><strong>Imaging:</strong> Next-gen contrast agents.</li>
                 <li><strong>Biologics:</strong> Advanced therapeutic pathways.</li>
                 <li><strong>POCT:</strong> Evidence-based rapid diagnostics.</li>
-                <li><strong>Ophthalmology:</strong> Rebuilding the lipid layer.</li>
+                <li><strong>Ophthalmology:</strong> Rebuilding the lipid layer[cite: 51].</li>
             </ul>
-            <p style="background: #f9f9f9; padding: 15px; border-radius: 10px; font-style: italic; border: 1px dashed #ccc;">[ Insert SpongeBob Meme Here ]</p>
-            <p style="font-size: 0.95em; color: #555;"><i>"The humor is for the soul, the science is for the cells."</i></p>
+
+            <img src="https://via.placeholder.com/400x250?text=SpongeBob+Dry+Eye+Meme" alt="Dry eye meme" class="meme-img">
+            <p><small><i>"The humor is for the soul, the science is for the cells."</i></small></p>
         </div>
-        <a href="/sgbiopharma" class="button">Clinical Data & Products 👁️‍🗨️</a>
+        <a href="/sgbiopharma" class="button">Clinical Data & Products 👀</a>
     </section>
 
     <section class="card">
         <div>
-            <span class="badge">Research & R&D</span>
+            <span class="science-badge">RESEARCH & R&D</span>
             <h2>Biotech Madness 🧪</h2>
             <p>Partnering with antibody wizards and IHC innovators.</p>
-            <p>🧬 <strong>Germinal Biotech:</strong> Antibody discovery and affinity maturation.</p>
-            <p>💉 <strong>Prima Diagnostics:</strong> ExactBiofusion® 1-step IHC.</p>
-            <p style="background: #f9f9f9; padding: 15px; border-radius: 10px; font-style: italic; border: 1px dashed #ccc;">[ Insert Lab Madness Meme Here ]</p>
+
+            <div style="text-align: left; margin: 15px 0;">
+                <p>🧫 <strong>Germinal Biotech:</strong> <br>
+                <span style="font-size: 0.9em;">Antibody discovery, humanization, and affinity maturation[cite: 70].</span></p>
+                
+                <p>🧬 <strong>Prima Diagnostics:</strong> <br>
+                <span style="font-size: 0.9em;">ExactBiofusion® 1-step IHC: Fusing primary antibodies to HRP [cite: 74-75].</span></p>
+            </div>
+
+            <img src="https://via.placeholder.com/400x250?text=Lab+Chaos+Cartoon" alt="Lab madness meme" class="meme-img">
+            <p><a href="/evidence" class="evidence-link">View Published Studies & Whitepapers</a></p>
         </div>
         <a href="/biotech" class="button">Explore Lab Innovation 🚀</a>
     </section>
+
 </div>
 
-<section class="evolution">
-    <h3>Our Journey of Perseverance</h3>
-    <p>Navigating harsh economic environments with scientific resolve—maturing from the initial spark to metallic strength.</p>
-    <div class="logo-grid">
-        <img src="orange_logo.png" class="evolution-img" alt="The Spark (Orange)">
-        <span style="font-size: 2em; color: var(--silver);">➡️</span>
-        <img src="生物圣槊 定稿_画板 1 crop.jpg" class="evolution-img" alt="The Perseverance (Silver)">
-    </div>
-</section>
-
-<footer>
-    <p style="text-align: center; padding: 30px; color: #888;">© Biotrilance Pte. Ltd. | Biotrilance.SG@biotrilance.com</p>
+<footer id="contact">
+    <h3>Biotrilance: Bridging Science and Solution</h3>
+    <p>Clinicians, Scientists, and Students: Let's collaborate.</p>
+    <p><strong>Biotrilance.SG@biotrilance.com</strong></p>
 </footer>
 
 </body>
