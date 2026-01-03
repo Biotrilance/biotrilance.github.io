@@ -5,115 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
     <style>
-        /* BRAND COLORS SAMPLED FROM YOUR FAVOURITE SCREENSHOTS */
+        /* BRAND COLORS */
         :root {
-            --electric-orange: #FF6B2B; /* */
-            --deep-teal: #006B5F;       /* */
-            --dark-footer: #004D40;     /* */
-            --peach-bg: #FFE8C3;        /* */
-            --bright-blue: #0000FF;      /* */
+            --orange: #FF6B2B;
+            --teal: #006B5F;
+            --bg: #FFE8C3;
+            --blue: #0000FF;
         }
 
         body { 
             font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: var(--peach-bg);
-            color: #333; 
-            line-height: 1.6; 
+            margin: 0; padding: 0; 
+            background-color: var(--bg); 
+            color: #333;
         }
 
         header { 
-            background-color: var(--electric-orange);
+            background-color: var(--orange); 
             color: white; 
             text-align: center; 
-            padding: 50px 20px; 
+            padding: 40px 20px; /* Reduced from 60px */
         }
-        header h1 { margin: 0; font-size: 2.8em; }
 
-        /* NAVIGATION: Fixed for Mobile Overlap */
         nav { 
-            background-color: var(--deep-teal);
+            background-color: var(--teal); 
             padding: 10px; 
             display: flex; 
             justify-content: center; 
-            flex-wrap: wrap; /* Allows links to stack on mobile */
-            gap: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            flex-wrap: wrap; 
+            gap: 10px;
+            position: sticky; top: 0; z-index: 1000;
         }
-        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1em; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9em; }
 
-        /* SIDE-BY-SIDE GRID: Responsive Flexbox */
+        /* THE CONTAINER - Crucial for scrolling */
         .main-container { 
             display: flex; 
-            flex-direction: row; /* Desktop Default */
+            flex-direction: row; 
             flex-wrap: wrap; 
-            gap: 25px; 
-            padding: 40px 20px; 
-            max-width: 1300px; 
-            margin: 0 auto; 
-            justify-content: center; 
+            gap: 20px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto;
+            height: auto; /* Ensures it grows with content */
         }
         
         .card { 
             background: white; 
             border-radius: 20px; 
-            padding: 30px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+            padding: 25px; 
             flex: 1; 
-            min-width: 400px; /* Snaps to column if screen < 800px */
+            min-width: 450px; 
+            border-top: 10px solid var(--teal);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-            border-top: 12px solid var(--deep-teal);
-            box-sizing: border-box;
         }
 
-        h2, h3, h4 { 
-            color: var(--bright-blue) !important; 
-            text-align: left; 
-            margin-top: 10px;
-        }
+        h2, h3, h4 { color: var(--blue) !important; text-align: left; }
 
         .button { 
             display: inline-block; 
             background: #FFF176; 
-            color: #333; 
-            padding: 12px 25px; 
+            padding: 10px 20px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: bold; 
-            margin-top: 20px; 
+            margin-top: 20px;
             align-self: flex-start;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .meme-area { 
-            background: #fdfdfd; 
-            border: 2px dashed #009688; 
-            border-radius: 15px; 
-            padding: 15px; 
-            margin: 20px 0; 
-            text-align: center; 
-        }
+        footer { background: #004D40; color: white; text-align: center; padding: 20px; margin-top: 40px; }
 
-        footer { 
-            background-color: var(--dark-footer);
-            color: white; 
-            text-align: center; 
-            padding: 30px 20px; 
-            margin-top: 50px;
-        }
-
-        /* MOBILE FIXES: Triggered for screens smaller than 768px */
+        /* MOBILE OVERRIDE */
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8em; }
-            header p { font-size: 0.9em; }
-            .main-container { flex-direction: column; padding: 20px 15px; }
-            .card { min-width: 100%; padding: 20px; }
-            nav { gap: 8px; }
-            nav a { font-size: 0.85em; }
+            header { padding: 20px 10px; } /* Shrink header to show content sooner */
+            header h1 { font-size: 1.5em; }
+            .main-container { flex-direction: column; } /* Stacks cards vertically */
+            .card { min-width: 100%; margin-bottom: 20px; } /* Full width cards */
         }
     </style>
 </head>
@@ -121,29 +90,40 @@
 
 <header>
     <h1>Biotrilance Pte. Ltd.</h1>
-    <p>Singapore's Most Serious Biotech Showcase...<br>
-    From ancient remedies to gene therapy and everything in between.</p>
+    <p>Singapore's Most Serious Biotech Showcase...</p>
 </header>
 
 <nav>
     <a href="/">Home 🏠</a>
     <a href="/sgbiopharma">SGBioPharma 👁️</a>
-    <a href="https://www.germinalbiotech.com/">Germinal 🧫</a>
+    <a href="/biotech">Biotech 🧪</a>
     <a href="/prima-diagnostics">Prima 🔬</a>
     <a href="/blog">Blog 📝</a>
-    <a href="#contact">Contact 📞</a>
 </nav>
 
 <div class="main-container">
     <section class="card">
         <h2>Pharma Geek: Where Cool Products Meet Real Needs! 👀</h2>
-        <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies.</p>
-        
+        [cite_start]<p>Geeking out over eye care, cell therapies, and innovative pharma goodies [cite: 45-46].</p>
         <h3>Primary Focus: SGBioPharma 💧</h3>
-        <p>Innovative wizards bringing preservative-free drops that rebuild tear films and soothe allergies.</p>
-        
-        <h4>Hero Highlight: VisuEVO® 💧</h4>
-        <p>The star for evaporative dry eye – magic with Omega-3s and phospholipids to rebuild the lipid layer.</p>
+        [cite_start]<p>Innovative eye care wizards bringing preservative-free drops that rebuild tear films [cite: 48-49].</p>
+        <a href="/sgbiopharma" class="button">Explore SGBioPharma 👀</a>
+    </section>
 
-        <div class="meme-area"> [ SpongeBob Dry Eye Meme ] </div>
-        <a href="/sgbi
+    <section class="card">
+        <h2>Biotech Madness: Mad Scientists Welcome! 🧪</h2>
+        [cite_start]<p>Contracts with antibody wizards and one-step IHC pros! [cite: 65-66].</p>
+        <h3>Germinal Biotech 🧫</h3>
+        [cite_start]<p>Antibody discovery, cell line shenanigans, and humanization [cite: 69-70].</p>
+        <h3>Prima Diagnostics 🧬</h3>
+        [cite_start]<p>ExactBiofusion®: Direct 1-step IHC hero without the secondary antibody drama [cite: 74-76].</p>
+        <a href="/biotech" class="button">Explore Biotech 🚀</a>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda</p>
+</footer>
+
+</body>
+</html>
