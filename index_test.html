@@ -4,181 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Biotrilance Pte. Ltd.</title>
+    <!-- Fonts: Patrick Hand for main handwritten fun, Caveat for big title flourish -->
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Patrick Hand', cursive; [cite: 11]
-            margin: 0; padding: 0; [cite: 12]
-            background: linear-gradient(to bottom, #ffe0b2, #ffccbc); [cite: 13]
-            color: #333; [cite: 14]
-            line-height: 1.6; [cite: 15]
-            font-size: 20px; [cite: 16]
+            font-family: 'Patrick Hand', cursive;
+            margin: 0; padding: 0;
+            background: linear-gradient(to bottom, #ffe0b2, #ffccbc);
+            color: #333;
+            line-height: 1.6;
+            font-size: 20px;
         }
         header {
-            background-color: #ff7043; /* Your favorite vibrant orange */ [cite: 19]
-            color: white; [cite: 20]
-            text-align: center; [cite: 21]
-            padding: 48px 24px; [cite: 22]
+            background-color: #ff7043; /* Old vibrant orange */
+            color: white;
+            text-align: center;
+            padding: 48px 24px;
         }
-        header h1 {
-            margin: 0; [cite: 25]
-            font-size: 3.2rem; [cite: 26]
-            font-family: 'Caveat', cursive; [cite: 28]
+        header h1 { 
+            margin: 0; 
+            font-size: 3.2rem; 
+            font-weight: normal;
+            font-family: 'Caveat', cursive; /* Extra handwritten flourish on title */
+            letter-spacing: 1px;
         }
-        .tagline {
-            font-size: 1.3rem; [cite: 32]
-            margin-top: 12px; [cite: 33]
-            max-width: 800px; [cite: 34]
-            margin-left: auto; [cite: 35]
-            margin-right: auto; [cite: 36]
+        .tagline { 
+            font-size: 1.3rem; 
+            margin-top: 12px; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; 
         }
+        .quote { font-style: italic; margin-top: 20px; font-size: 1.1rem; }
+        .quote-attribution { font-size: 1rem; margin-top: 8px; }
         nav {
-            background-color: #00695c; /* Your favorite teal */ [cite: 41]
-            padding: 15px; [cite: 42]
-            display: flex; [cite: 43]
-            justify-content: center; [cite: 44]
-            flex-wrap: wrap; [cite: 45]
-            gap: 20px; [cite: 46]
-            position: sticky; top: 0; z-index: 1000; [cite: 47]
+            background-color: #00695c; /* Old teal */
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: sticky; top: 0; z-index: 1000;
         }
-        nav a {
-            color: white; [cite: 50]
-            text-decoration: none; [cite: 51]
-            font-weight: bold; [cite: 52]
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 18px;
         }
+        nav a:hover { text-decoration: underline; }
         .main-container {
-            display: flex; [cite: 57]
-            flex-wrap: wrap; [cite: 58]
-            gap: 24px; [cite: 59]
-            padding: 32px 16px; [cite: 60]
-            max-width: 1400px; [cite: 62]
-            margin: 0 auto; [cite: 62]
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 24px; 
+            padding: 32px 16px;
+            max-width: 1400px; 
+            margin: 0 auto;
         }
         .card {
-            background: #ffffff; [cite: 65]
-            border: 1px solid #d0d7de; [cite: 66]
-            border-radius: 12px; [cite: 67]
-            padding: 24px; [cite: 68]
-            flex: 1; [cite: 69]
-            min-width: 380px; [cite: 70]
-            display: flex; [cite: 71]
-            flex-direction: column; [cite: 72]
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); [cite: 73]
+            background: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 12px;
+            padding: 24px;
+            flex: 1; 
+            min-width: 380px;
+            display: flex; 
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #0000FF; /* Your quirky bright blue */ 
-            font-size: 1.8rem; [cite: 77]
-            border-bottom: 2px dashed #009688; [cite: 79]
-            padding-bottom: 8px; [cite: 80]
+        h2 { 
+            color: #0000FF; /* Old bright blue for quirky section titles */
+            font-size: 1.8rem; 
+            margin-top: 0; 
+            border-bottom: 2px dashed #009688; 
+            padding-bottom: 8px; 
         }
+        p { margin: 12px 0; }
+        .disclaimer { font-size: 0.9rem; color: #656d76; font-style: italic; margin: 8px 0 16px; }
         .cartoon-area {
-            background: #f9f9f9; [cite: 85]
-            border-radius: 20px; [cite: 86]
-            padding: 15px; [cite: 87]
-            text-align: center; [cite: 88]
-            margin: 15px 0; [cite: 89]
-            border: 2px dashed #009688; [cite: 90]
+            background: #f9f9f9;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            margin: 25px 0;
+            border: 2px dashed #009688; /* Old highlight border color */
         }
-        .meme-gallery {
-            display: flex;
-            justify-content: space-around;
-            gap: 10px;
-            margin-bottom: 15px;
+        .cartoon-area img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .meme-gallery img {
-            width: 45%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .product-shot {
-            max-width: 120px;
-            height: auto;
-            margin-top: 10px;
+        .caption { 
+            font-style: italic; 
+            color: #656d76; 
+            margin-top: 12px; 
+            font-size: 1rem; 
         }
         .button {
-            display: inline-block; [cite: 105]
-            padding: 12px 25px; [cite: 106]
-            background: #fff176; [cite: 107]
-            color: #333; [cite: 108]
-            text-decoration: none; [cite: 109]
-            border-radius: 50px; [cite: 110]
-            font-weight: bold; [cite: 111]
-            align-self: flex-start; [cite: 114]
-            margin-top: auto; [cite: 113]
+            display: inline-block;
+            padding: 12px 25px;
+            background: #fff176; /* Old fun yellow */
+            color: #333;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-top: auto;
+            align-self: flex-start;
         }
+        .button:hover { background: #ffb74d; }
         footer {
-            background: #004d40; [cite: 118]
-            color: white; [cite: 119]
-            text-align: center; [cite: 120]
-            padding: 30px 20px; [cite: 121]
-            margin-top: 40px; [cite: 122]
+            background: #004d40; /* Old dark teal */
+            color: white; 
+            text-align: center; 
+            padding: 30px 20px; 
+            margin-top: 40px;
+        }
+        footer .fun-quote { font-style: italic; margin-bottom: 8px; font-size: 1.2rem; }
+        @media (max-width: 768px) {
+            .main-container { flex-direction: column; padding: 16px; }
+            .card { min-width: 100%; }
+            header h1 { font-size: 2.6rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Biotrilance Pte. Ltd.</h1> [cite: 134]
-        <div class="tagline">
-            Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene therapy! [cite: 136]
-            <div style="font-style: italic; margin-top: 15px;">"For a drug is of no benefit, if it does not also reach the one who needs it."</div> [cite: 137]
-            <div>— Galen of Pergamon</div> [cite: 138]
-        </div>
-    </header>
-
-    <nav>
-        <a href="#">Home  🏠 </a> [cite: 142]
-        <a href="#">SGBioPharma  👁️ </a> [cite: 143]
-        <a href="https://www.germinalbiotech.com/">Germinal Biotech  🧪 </a> [cite: 144]
-        <a href="#">Prima Diag  🔬 </a> [cite: 145]
-        <a href="#">Contact  📞 </a> [cite: 146]
-    </nav>
-
-    <div class="main-container">
-        <section class="card">
-            <h2>Pharma Geek  👀 </h2> [cite: 150]
-            <p>Geeking out over innovative eye care that actually helps. [cite: 151] <strong>Feel the struggle?</strong></p>
-            
-            <div class="cartoon-area">
-                <div class="meme-gallery">
-                    <img src="image_0144b1.jpg" alt="Patrick Star red eyes" title="The Suffering">
-                    <img src="image_0144b1.jpg" alt="Dehydrated SpongeBob" title="The Severe Dryness">
-                </div>
-                <div class="caption">The eternal dry eye struggle... (We feel you!) [cite: 154]</div>
-                <hr style="border: 1px dashed #009688; margin: 15px 0;">
-                <p><strong>There is hope:</strong></p>
-                <img src="image_01454d.png" alt="VisuEVO Eye Drops" class="product-shot">
-                <p style="font-size: 0.9rem;">VisuEVO: Relief for your cells and your soul.</p>
-            </div>
-
-            <a href="#" class="button">Dive into SGBioPharma  👀 </a> [cite: 156]
-        </section>
-
-        <section class="card">
-            <h2>Biotech Madness  🧪 </h2> [cite: 159]
-            <p>Finding that one perfect antibody in the immune haystack. [cite: 160]</p>
-            <div class="cartoon-area">
-                <div style="font-size: 50px;">🧙‍♂️🔬</div>
-                <div class="caption">When antibody discovery feels like alchemy [cite: 163]</div>
-            </div>
-            <a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech  🚀 </a> [cite: 165]
-        </section>
-
-        <section class="card">
-            <h2>Prima One-Step IHC Magic  🔬 </h2> [cite: 168]
-            <p><strong>Research Use Only (RUO)</strong> [cite: 169]</p>
-            <p>Revolutionary one-step IHC: cleaner, faster, high-yield staining magic. [cite: 171]</p>
-            <div class="cartoon-area">
-                <div style="font-size: 50px;">🪄✨</div>
-                <div class="caption">Turning complex IHC into one-step magic [cite: 174]</div>
-            </div>
-            <a href="#" class="button">Discover Prima Diagnostics  🔬 </a> [cite: 176]
-        </section>
+<header>
+    <h1>Biotrilance Pte. Ltd.</h1>
+    <div class="tagline">
+        Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene therapy and everything in between!
+        <div class="quote">"For a drug is of no benefit, if it does not also reach the one who needs it."</div>
+        <div class="quote-attribution">— Galen of Pergamon</div>
     </div>
+</header>
 
-    <footer>
-        <p class="fun-quote">"The humor is for the soul, the science is for the cells."</p> [cite: 180]
-        <p> 📧  Biotrilance.SG@biotrilance.com</p> [cite: 181]
-        <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda  😏 </p> [cite: 182]
-    </footer>
+<nav>
+    <a href="#">Home 🏠</a>
+    <a href="#">SGBioPharma 👁️</a>
+    <a href="https://www.germinalbiotech.com/">Germinal Biotech 🧪</a>
+    <a href="#">Prima Diag 🔬</a>
+    <a href="#">Contact 📞</a>
+</nav>
+
+<div class="main-container">
+    <section class="card">
+        <h2>Pharma Geek 👀</h2>
+        <p>Geeking out over innovative eye care and pharma solutions that actually help clinicians and patients.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your dry eye cartoons here -->
+            <div class="caption">The eternal dry eye struggle... (We feel you!)</div>
+        </div>
+        
+        <a href="#" class="button">Dive into SGBioPharma 👀</a>
+    </section>
+    
+    <section class="card">
+        <h2>Biotech Madness 🧪</h2>
+        <p>Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your mad scientist cartoons here -->
+            <div class="caption">When antibody discovery feels like alchemy 🧙‍♂️</div>
+        </div>
+        
+        <a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech 🚀</a>
+    </section>
+    
+    <section class="card">
+        <h2>Prima One-Step IHC Magic 🔬</h2>
+        <p><strong>Research Use Only (RUO)</strong> – Not registered as an IVD with HSA.</p>
+        <p class="disclaimer">For research and laboratory use only; not for diagnostic procedures.</p>
+        <p>Revolutionary one-step IHC: primary antibody fused directly to HRP. Skip the secondary – cleaner, faster, high-yield staining magic.</p>
+        
+        <div class="cartoon-area">
+            <!-- Your IHC magic cartoons here -->
+            <div class="caption">Turning complex IHC into one-step magic 🪄</div>
+        </div>
+        
+        <a href="#" class="button">Discover Prima Diagnostics 🔬</a>
+    </section>
+</div>
+
+<footer>
+    <p class="fun-quote">"The humor is for the soul, the science is for the cells."</p>
+    <p>📧 Biotrilance.SG@biotrilance.com</p>
+    <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda 😏</p>
+</footer>
 </body>
 </html>
