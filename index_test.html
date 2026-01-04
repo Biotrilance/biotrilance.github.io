@@ -7,106 +7,112 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 <style>
 :root {
---electric-orange: #FF6B2B;
---deep-teal: #006B5F;
---vibrant-navy: #003366; /* New vibrant deep navy */
---peach-bg: #FFE8C3;
---link-blue: #0969da;
---header-white: #ffffff;
+    --electric-orange: #FF6B2B;
+    --deep-teal: #006B5F;
+    --vibrant-navy: #003366; 
+    --peach-bg: #FFE8C3;
+    --link-blue: #0969da;
 }
+
 body {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-margin: 0; padding: 0;
-background-color: var(--peach-bg);
-color: #1f2328;
-line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0; padding: 0;
+    background-color: var(--peach-bg);
+    color: #1f2328;
+    line-height: 1.5;
 }
+
 header {
-background-color: var(--electric-orange);
-color: var(--vibrant-navy); /* Applied navy here */
-text-align: center;
-padding: 48px 24px;
+    background-color: var(--electric-orange);
+    color: var(--vibrant-navy);
+    text-align: center;
+    padding: 48px 24px;
 }
+
 header h1 {
-margin: 0;
-font-size: 2.8rem;
-font-weight: 600;
-font-family: 'Caveat', cursive;
-letter-spacing: 1px;
-color: var(--vibrant-navy); /* Ensure title is navy */
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+    color: var(--vibrant-navy);
 }
+
 .tagline { 
     font-size: 1.1rem; 
     margin-top: 12px; 
     font-weight: 500;
     max-width: 800px; 
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0 auto;
 }
-.quote { 
-    font-style: italic; 
-    margin-top: 20px; 
-    font-size: 1rem; 
-    opacity: 0.85; /* Slightly faded for hierarchy */
-}
-.quote-attribution { 
-    font-size: 0.9rem; 
-    margin-top: 8px; 
-    opacity: 0.8; 
-}
+
 nav {
-background-color: var(--deep-teal);
-padding: 12px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 16px;
-position: sticky; top: 0; z-index: 1000;
+    background-color: var(--deep-teal);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: sticky; top: 0; z-index: 1000;
 }
+
 nav a { color: white; text-decoration: none; font-weight: 500; }
-nav a:hover { text-decoration: underline; }
+
 .main-container {
-display: flex; flex-wrap: wrap;
-gap: 24px; padding: 32px 16px;
-max-width: 1400px; margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 24px; 
+    padding: 32px 16px;
+    max-width: 1400px; 
+    margin: 0 auto;
 }
+
 .card {
-background: #ffffff;
-border: 1px solid #d0d7de;
-border-radius: 12px;
-padding: 24px;
-flex: 1; min-width: 380px;
-display: flex; flex-direction: column;
-box-shadow: 0 1px 3px rgba(31,35,40,0.12);
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1 1 350px; 
+    min-width: 0; /* Critical for mobile alignment */
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.12);
 }
+
 h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+
 .cartoon-area {
-background: #f6f8fa;
-border-radius: 12px;
-padding: 20px;
-text-align: center;
-margin: 20px 0;
-border: 2px dashed var(--deep-teal);
+    background: #f6f8fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px dashed var(--deep-teal);
 }
+
 .cartoon-area img {
-max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 100%; height: auto; border-radius: 12px;
 }
-.caption { font-style: italic; color: #656d76; margin-top: 12px; font-size: 0.95rem; }
+
 .button {
-display: inline-block;
-background-color: #f6f8fa;
-border: 1px solid #d0d7de;
-color: var(--link-blue);
-padding: 10px 18px;
-border-radius: 6px;
-text-decoration: none;
-font-weight: 600;
-margin-top: auto;
-align-self: flex-start;
-transition: 0.2s;
+    display: inline-block;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    color: var(--link-blue);
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto;
+    align-self: flex-start;
 }
-.button:hover { background-color: #ebf0f4; }
+
 footer { background: #004D40; color: white; text-align: center; padding: 24px; margin-top: 40px; }
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    header h1 { font-size: 2.2rem; }
+    .card { padding: 16px; }
+}
 </style>
 </head>
 <body>
@@ -115,8 +121,8 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
     <h1>Biotrilance Pte. Ltd.</h1>
     <div class="tagline">
         Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene therapy and everything in between!
-        <div class="quote">"For a drug is of no benefit, if it does not also reach the one who needs it."</div>
-        <div class="quote-attribution">— Galen of Pergamon</div>
+        <div style="font-style: italic; margin-top: 20px; opacity: 0.85;">"For a drug is of no benefit, if it does not also reach the one who needs it."</div>
+        <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.8;">— Galen of Pergamon</div>
     </div>
 </header>
 
@@ -137,9 +143,9 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
         <div class="cartoon-area" style="background: white;">
             <h4 style="font-family: 'Caveat', cursive; font-size: 1.4rem; color: #d32f2f; margin-bottom: 10px;">The Reality of Dry Eye Pain...</h4>
             <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;">
-                <img src="https://media.tenor.com/OlGtVsIj54YAAAAe/patrick-patrick-star.png" style="width: 100px;" alt="Patrick Star dry eyes">
-                <img src="https://media.tenor.com/wuVzNDgShwsAAAAM/spongebob-dry.gif" style="width: 100px;" alt="SpongeBob dry eyes">
-                <img src="https://media.tenor.com/FIpYmjf9Ch8AAAAM/eyes-burning.gif" style="width: 100px;" alt="Eyes on fire">
+                <img src="https://media.tenor.com/OlGtVsIj54YAAAAe/patrick-patrick-star.png" style="width: 80px;" alt="Patrick Star">
+                <img src="https://media.tenor.com/wuVzNDgShwsAAAAM/spongebob-dry.gif" style="width: 80px;" alt="SpongeBob">
+                <img src="https://media.tenor.com/FIpYmjf9Ch8AAAAM/eyes-burning.gif" style="width: 80px;" alt="Burning eyes">
             </div>
             <p style="font-size: 0.9rem; font-style: italic;">We are passionate and compassionate regarding dry eyes.</p>
             
@@ -149,14 +155,14 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
                 
                 <div style="background: #f6f8fa; padding: 12px; border-radius: 8px; border-left: 4px solid var(--electric-orange); display: flex; align-items: center; gap: 12px;">
                     <div style="flex: 1;">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;">
                             <strong style="color: var(--electric-orange);">Hero Highlight: VisuEVO® 💧</strong>
-                            <span style="background: #FFD700; color: #000; padding: 2px 8px; border-radius: 12px; font-weight: bold; font-size: 0.65rem; white-space: nowrap;">⭐ STAR HIGHLIGHT</span>
+                            <span style="background: #FFD700; color: #000; padding: 2px 8px; border-radius: 12px; font-weight: bold; font-size: 0.65rem;">⭐ STAR HIGHLIGHT</span>
                         </div>
-                        <span style="font-size: 0.85rem;">The Star Highlight for Evaporative Dry Eye. Rebuilds the lipid layer with Omega-3s and phospholipids.</span>
+                        <span style="font-size: 0.85rem;">The Star Highlight for Evaporative Dry Eye. Rebuilds the lipid layer with <strong>Omega-3s, Vit A and D & phospholipids.</strong></span>
                     </div>
                     <div style="flex-shrink: 0;">
-                        <img src="https://via.placeholder.com/80x120?text=VisuEVO" alt="VisuEVO Product" style="width: 65px; border-radius: 4px;">
+                        <img src="https://via.placeholder.com/80x120?text=VisuEVO" alt="VisuEVO Product" style="width: 60px; border-radius: 4px; display: block;">
                     </div>
                 </div>
             </div>
@@ -168,11 +174,9 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
         <h2>Biotech Madness: All Scientists Welcome! 🧪</h2>
         <h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">GB's Protein Engineering 🧪</h3>
         <p>Contracts with antibody wizards! 🚀 Researchers, prepare for awareness overload!</p>
-        
         <div class="cartoon-area">
-            <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Funny scientists group">
+            <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Scientists">
             <div class="caption">When antibody discovery feels like alchemy 🧙‍♂️</div>
-            
             <div style="border-top: 1px solid #ddd; margin-top: 15px; padding-top: 15px; text-align: left;">
                 <p style="font-size: 0.9rem;">Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry.</p>
             </div>
@@ -184,11 +188,9 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
         <h2>Biotech Madness: Accuracy First! 🔬</h2>
         <h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">Prima One-Step IHC Magic 🔬</h3>
         <p>Primary Antibody fused directly to HRP! 🧪 Cleaner, faster, high-yield staining magic! 🪄</p>
-        
         <div class="cartoon-area">
             <img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist">
             <div class="caption">Turning complex IHC into one-step magic 🪄</div>
-
             <div style="border-top: 1px solid #ddd; margin-top: 15px; padding-top: 15px; text-align: left;">
                 <p style="font-size: 0.9rem;">Revolutionary technology: skip the secondary antibody to eliminate background noise.</p>
             </div>
@@ -203,7 +205,7 @@ footer { background: #004D40; color: white; text-align: center; padding: 24px; m
 
 <footer style="background: #004D40; color: white; text-align: center; padding: 24px; margin-top: 40px;">
     <p>"The humor is for the soul, the science is for the cells."</p>
-    <p> 📧 Biotrilance.SG@biotrilance.com</p>
+    <p>📧 Biotrilance.SG@biotrilance.com</p>
     <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda 😏</p>
 </footer>
 
