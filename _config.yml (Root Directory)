@@ -1,6 +1,6 @@
-title: Biotrilance - Biotech Shenanigans Edition
+title: Biotrilance
+email: Biotrilance.SG@biotrilance.com
 description: Singapore's Most Serious Biotech Showcase
-url: ""
-baseurl: ""
-markdown: kramdown
-permalink: pretty
+baseurl: "" # keep empty for username.github.io
+url: "https://biotrilance.github.io"
+theme: jekyll-theme-cayman # or your preferred base theme
