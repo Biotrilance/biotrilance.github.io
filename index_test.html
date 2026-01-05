@@ -76,23 +76,6 @@ nav a { color: white; text-decoration: none; font-weight: 500; }
 }
 
 h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
-
-/* --- REFINED PRODUCT IMAGE STYLING --- */
-.product-img {
-    width: 110px;                  /* Presence without crowding */
-    height: auto;
-    border-radius: 10px;           /* Modern rounded look */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
-    border: 1px solid #ddd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block;
-}
-
-.product-img:hover {
-    transform: translateY(-4px) scale(1.03); /* Premium lift effect */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
 .cartoon-area {
 background: #f6f8fa;
 border-radius: 12px;
@@ -101,8 +84,9 @@ text-align: center;
 margin: 20px 0;
 border: 2px dashed var(--deep-teal);
 }
-.cartoon-area img { max-width: 100%; height: auto; border-radius: 12px; }
-
+.cartoon-area img {
+max-width: 100%; height: auto; border-radius: 12px;
+}
 .button {
 display: inline-block;
 background-color: #f6f8fa;
@@ -123,7 +107,7 @@ header h1 { font-size: 2.2rem; }
 .card { padding: 16px; }
 }
 
-/* Handwritten Header/Footer Quote Styles */
+/* --- HEADER QUOTE STYLES --- */
 header .tagline > div[style*="font-style: italic"] {
     font-family: 'Caveat', cursive;
     font-weight: 600;
@@ -131,16 +115,35 @@ header .tagline > div[style*="font-style: italic"] {
     margin-top: 24px;
     opacity: 0.9;
 }
+
 header .tagline > div[style*="font-size: 0.9rem"] {
     font-family: 'Caveat', cursive;
     font-size: 0.95rem;
 }
+
+/* --- FOOTER QUOTE STYLES --- */
 footer p:first-of-type {
     font-family: 'Caveat', cursive;
     font-weight: 600;
     font-size: 1.3rem;
     margin-bottom: 20px;
     opacity: 0.95;
+}
+
+/* --- PRODUCT IMAGE STYLING --- */
+.product-img {
+    width: 110px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+.product-img:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 </style>
 </head>
@@ -184,8 +187,8 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 <span style="font-size: 0.85rem;">The Star Highlight for Evaporative Dry Eye. Rebuilds the lipid layer with <strong>Omega-3s, Vit A and D & phospholipids.</strong></span>
 </div>
 <div style="flex-shrink: 0; padding-left: 16px; display: flex; align-items: center;">
-    <img src="https://theopticalpeople.co.uk/wp-content/uploads/2021/11/VisuEVO-10ml-Bottle-min.png" 
-         alt="VisuEVO® Preservative-Free Eye Drops" 
+    <img src="https://www.keepeyesinsight.co.za/wp-content/uploads/2023/08/Images-10.jpg"
+         alt="VisuEVO® Preservative-Free Eye Drops – Outer Carton and Inner Bottle"
          class="product-img">
 </div>
 </div>
