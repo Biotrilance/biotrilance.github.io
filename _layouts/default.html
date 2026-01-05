@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if page.title %}{{ page.title }} | {% endif %}Biotrilance</title>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Biotrilance Pte. Ltd.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-{% include header.html %}
-{% include nav.html %}
-<main class="container" style="min-height: 80vh;">
-{{ content }}
-</main>
-{% include footer.html %}
+    <header>
+        <h1>Biotrilance Pte. Ltd.</h1>
+        <div class="tagline">
+            Singapore's Most Serious Biotech Showcase... <br>
+            From ancient remedies to gene therapy and everything in between!
+            <div style="font-style: italic;">"For a drug is of no benefit, if it does not also reach the one who needs it." [cite: 154]</div>
+            <div style="font-size: 0.9rem;">— Galen of Pergamon [cite: 155]</div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="{{ site.baseurl }}/">Home 🏠</a>
+        <a href="#">SGBioPharma 👁️</a>
+        <a href="https://www.germinalbiotech.com/">Germinal Biotech 🧪</a>
+        <a href="#">Prima Diag 🔬</a>
+        <a href="#">Contact 📞</a>
+    </nav>
+
+    <div class="main-container">
+        {{ content }}
+    </div>
+
+    <footer>
+        <p>"The humor is for the soul, the science is for the cells." [cite: 229]</p>
+        <p>📧 Biotrilance.SG@biotrilance.com [cite: 230]</p>
+        <p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda 😏 [cite: 231]</p>
+    </footer>
 </body>
 </html>
