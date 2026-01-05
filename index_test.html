@@ -76,6 +76,23 @@ nav a { color: white; text-decoration: none; font-weight: 500; }
 }
 
 h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+
+/* --- REFINED PRODUCT IMAGE STYLING --- */
+.product-img {
+    width: 110px;                  /* Presence without crowding */
+    height: auto;
+    border-radius: 10px;           /* Modern rounded look */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+.product-img:hover {
+    transform: translateY(-4px) scale(1.03); /* Premium lift effect */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 .cartoon-area {
 background: #f6f8fa;
 border-radius: 12px;
@@ -84,9 +101,8 @@ text-align: center;
 margin: 20px 0;
 border: 2px dashed var(--deep-teal);
 }
-.cartoon-area img {
-max-width: 100%; height: auto; border-radius: 12px;
-}
+.cartoon-area img { max-width: 100%; height: auto; border-radius: 12px; }
+
 .button {
 display: inline-block;
 background-color: #f6f8fa;
@@ -107,25 +123,22 @@ header h1 { font-size: 2.2rem; }
 .card { padding: 16px; }
 }
 
-/* --- HEADER QUOTE STYLES --- */
+/* Handwritten Header/Footer Quote Styles */
 header .tagline > div[style*="font-style: italic"] {
-    font-family: 'Caveat', cursive;  /* Handwritten like the title */
-    font-weight: 600;                /* Bold for emphasis */
-    font-size: 1rem;                 /* Smaller than current */
-    margin-top: 24px;                /* Slight extra space for breathing room */
-    opacity: 0.9;                    /* A bit higher than now for readability */
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 24px;
+    opacity: 0.9;
 }
-
 header .tagline > div[style*="font-size: 0.9rem"] {
-    font-family: 'Caveat', cursive;  /* Handwritten attribution for consistency */
+    font-family: 'Caveat', cursive;
     font-size: 0.95rem;
 }
-
-/* --- FOOTER QUOTE STYLES --- */
 footer p:first-of-type {
-    font-family: 'Caveat', cursive;  /* Handwritten style for the footer quote */
+    font-family: 'Caveat', cursive;
     font-weight: 600;
-    font-size: 1.3rem;               /* Slightly larger than body text for emphasis */
+    font-size: 1.3rem;
     margin-bottom: 20px;
     opacity: 0.95;
 }
@@ -170,8 +183,10 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 </div>
 <span style="font-size: 0.85rem;">The Star Highlight for Evaporative Dry Eye. Rebuilds the lipid layer with <strong>Omega-3s, Vit A and D & phospholipids.</strong></span>
 </div>
-<div style="flex-shrink: 0;">
-<img src="https://via.placeholder.com/80x120?text=VisuEVO" alt="VisuEVO Product" style="width: 60px; border-radius: 4px; display: block;">
+<div style="flex-shrink: 0; padding-left: 16px; display: flex; align-items: center;">
+    <img src="https://theopticalpeople.co.uk/wp-content/uploads/2021/11/VisuEVO-10ml-Bottle-min.png" 
+         alt="VisuEVO® Preservative-Free Eye Drops" 
+         class="product-img">
 </div>
 </div>
 </div>
