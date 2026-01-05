@@ -1,6 +1,31 @@
-title: Biotrilance
+# Site Settings
+title: Biotrilance Pte. Ltd.
 email: Biotrilance.SG@biotrilance.com
-description: Singapore's Most Serious Biotech Showcase
-baseurl: "" # keep empty for username.github.io
-url: "https://biotrilance.github.io"
-theme: jekyll-theme-cayman # or your preferred base theme
+description: >- # This allows for a multi-line description
+  Singapore's Most Serious Biotech Showcase... 
+  From ancient remedies to gene therapy and everything in between!
+
+# URL Settings
+# Replace with your actual custom domain if you have one later
+url: "https://biotrilance.github.io" 
+baseurl: "" # Leave this empty if your site is at the root (username.github.io)
+
+# Build Settings
+theme: jekyll-theme-cayman # You can keep this or change it; your custom CSS will override it
+plugins:
+  - jekyll-feed
+
+# Sass/CSS Settings
+sass:
+  style: compressed
+
+# Exclusion list
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - index_test.html # Excludes your test file from the live build
