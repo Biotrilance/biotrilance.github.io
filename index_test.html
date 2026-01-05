@@ -50,25 +50,31 @@ gap: 16px;
 position: sticky; top: 0; z-index: 1000;
 }
 nav a { color: white; text-decoration: none; font-weight: 500; }
+
+/* --- IMPROVED LAYOUT FOR WIDER SCREENS --- */
 .main-container {
-display: flex;
-flex-wrap: wrap;
-gap: 24px;
-padding: 32px 16px;
-max-width: 1400px;
-margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px 16px;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
 }
+
 .card {
-background: #ffffff;
-border: 1px solid #d0d7de;
-border-radius: 12px;
-padding: 24px;
-flex: 1 1 350px;
-min-width: 0; 
-display: flex;
-flex-direction: column;
-box-shadow: 0 1px 3px rgba(31,35,40,0.12);
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1 1 400px;
+    max-width: 500px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.12);
 }
+
 h2 { color: var(--electric-orange); font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
 .cartoon-area {
 background: #f6f8fa;
@@ -135,17 +141,16 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 </div>
 </header>
 <nav>
-<a href="#">Home  🏠  </a>
-<a href="#">SGBioPharma  👁️  </a>
-<a href="https://www.germinalbiotech.com/">Germinal Biotech  🧪  </a>
-<a href="#">Prima Diag  🔬  </a>
-<a href="#">Contact  📞  </a>
+<a href="#">Home   🏠   </a>
+<a href="#">SGBioPharma   👁️   </a>
+<a href="https://www.germinalbiotech.com/">Germinal Biotech   🧪   </a>
+<a href="#">Prima Diag   🔬   </a>
+<a href="#">Contact   📞   </a>
 </nav>
 <div class="main-container">
 <section class="card" style="border: 2px solid var(--electric-orange);">
-<h2>Pharma Geek: Where Cool Products Meet Real Needs!  👀 </h2>
+<h2>Pharma Geek: Where Cool Products Meet Real Needs!   👀  </h2>
 <p>Geeking out over eye care, cell therapies, imaging, and innovative pharma goodies.</p>
-
 <div class="cartoon-area" style="background: white;">
 <h4 style="font-family: 'Caveat', cursive; font-size: 1.4rem; color: #d32f2f; margin-bottom: 10px;">The Reality of Dry Eye Pain...</h4>
 <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;">
@@ -154,16 +159,14 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 <img src="https://media.tenor.com/FIpYmjf9Ch8AAAAM/eyes-burning.gif" style="width: 80px;" alt="Burning eyes">
 </div>
 <p style="font-size: 0.9rem; font-style: italic;">We are passionate and compassionate regarding dry eyes.</p>
-
 <div style="border-top: 1px solid #eee; padding-top: 15px; text-align: left;">
-<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 0;">Primary Focus: SGBioPharma  💧 </h3>
+<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 0;">Primary Focus: SGBioPharma   💧  </h3>
 <p style="font-size: 0.9rem;">Preservative-free drops that rebuild tear films and tackle clinical challenges.</p>
-
 <div style="background: #f6f8fa; padding: 12px; border-radius: 8px; border-left: 4px solid var(--electric-orange); display: flex; align-items: center; gap: 12px;">
 <div style="flex: 1;">
 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;">
-<strong style="color: var(--electric-orange);">Hero Highlight: VisuEVO®  💧 </strong>
-<span style="background: #FFD700; color: #000; padding: 2px 8px; border-radius: 12px; font-weight: bold; font-size: 0.65rem;"> ⭐  STAR HIGHLIGHT</span>
+<strong style="color: var(--electric-orange);">Hero Highlight: VisuEVO®   💧  </strong>
+<span style="background: #FFD700; color: #000; padding: 2px 8px; border-radius: 12px; font-weight: bold; font-size: 0.65rem;">  ⭐   STAR HIGHLIGHT</span>
 </div>
 <span style="font-size: 0.85rem;">The Star Highlight for Evaporative Dry Eye. Rebuilds the lipid layer with <strong>Omega-3s, Vit A and D & phospholipids.</strong></span>
 </div>
@@ -173,28 +176,28 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 </div>
 </div>
 </div>
-<a href="#" class="button">Explore SGBioPharma  👀 </a>
+<a href="#" class="button">Explore SGBioPharma   👀  </a>
 </section>
 <section class="card" style="border: 2px solid var(--deep-teal);">
-<h2>Biotech Madness: All Scientists Welcome!  🧪 </h2>
-<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">GB's Protein Engineering  🧪 </h3>
-<p>Contracts with antibody wizards!  🚀  Researchers, prepare for awareness overload!</p>
+<h2>Biotech Madness: All Scientists Welcome!   🧪  </h2>
+<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">GB's Protein Engineering   🧪  </h3>
+<p>Contracts with antibody wizards!   🚀   Researchers, prepare for awareness overload!</p>
 <div class="cartoon-area">
 <img src="https://c8.alamy.com/comp/2WY7X5T/cartoon-illustration-of-funny-scientists-or-inventors-characters-group-in-the-laboratory-2WY7X5T.jpg" alt="Scientists">
-<div class="caption">When antibody discovery feels like alchemy  🧙 ‍ ♂️ </div>
+<div class="caption">When antibody discovery feels like alchemy   🧙  ‍  ♂️  </div>
 <div style="border-top: 1px solid #ddd; margin-top: 15px; padding-top: 15px; text-align: left;">
 <p style="font-size: 0.9rem;">Finding that one perfect antibody in the immune haystack – discovery, humanization, and pure science wizardry.</p>
 </div>
 </div>
-<a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech  🚀 </a>
+<a href="https://www.germinalbiotech.com/" class="button">Explore Germinal Biotech   🚀  </a>
 </section>
 <section class="card">
-<h2>Biotech Madness: Accuracy First!  🔬 </h2>
-<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">Prima One-Step IHC Magic  🔬 </h3>
-<p>Primary Antibody fused directly to HRP!  🧪  Cleaner, faster, high-yield staining magic!  🪄 </p>
+<h2>Biotech Madness: Accuracy First!   🔬  </h2>
+<h3 style="color: var(--deep-teal); font-size: 1.1rem; margin: 10px 0 5px 0;">Prima One-Step IHC Magic   🔬  </h3>
+<p>Primary Antibody fused directly to HRP!   🧪   Cleaner, faster, high-yield staining magic!   🪄  </p>
 <div class="cartoon-area">
 <img src="https://thumbs.dreamstime.com/b/mad-scientist-18494371.jpg" alt="Mad scientist">
-<div class="caption">Turning complex IHC into one-step magic  🪄 </div>
+<div class="caption">Turning complex IHC into one-step magic   🪄  </div>
 <div style="border-top: 1px solid #ddd; margin-top: 15px; padding-top: 15px; text-align: left;">
 <p style="font-size: 0.9rem;">Revolutionary technology: skip the secondary antibody to eliminate background noise.</p>
 </div>
@@ -202,13 +205,13 @@ Singapore's Most Serious Biotech Showcase... <br>From ancient remedies to gene t
 <p style="font-size: 0.9rem; color: #656d76; font-style: italic; margin-top: 10px;">
 <strong>RUO</strong> – Not registered as an IVD with HSA. For research and laboratory use only.
 </p>
-<a href="#" class="button">Discover Prima Diagnostics  🔬 </a>
+<a href="#" class="button">Discover Prima Diagnostics   🔬  </a>
 </section>
 </div>
 <footer style="background: #004D40; color: white; text-align: center; padding: 24px; margin-top: 40px;">
 <p>"The humor is for the soul, the science is for the cells."</p>
-<p> 📧  Biotrilance.SG@biotrilance.com</p>
-<p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda  😏 </p>
+<p>  📧   Biotrilance.SG@biotrilance.com</p>
+<p>© 2026 Biotrilance – All jokes aside, Science is serious... kinda   😏  </p>
 </footer>
 </body>
 </html>
