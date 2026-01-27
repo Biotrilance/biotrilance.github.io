@@ -87,3 +87,5 @@ All reduced during treatment (no VSE-CTN differences). Significant for IFN, sphi
 VisuEvo® proven **non-inferior** to Cationorm® across all parameters – with meaningful tear inflammation/lipid reductions that complement its Omega-3 + Vit D3 formula for resolving dry eye fire! 🔥💧
 
 [Back to Clinical Evidence Hub](/clinical/) | [Back to SGBioPharma 👀](/sgbiopharma/) | [Home 🏠](/)
+
+<!-- Build trigger - added Jan 27 2026 -->
